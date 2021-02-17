@@ -1,0 +1,11 @@
+{
+  "name": "programme-energie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/sass/css/style.scss"
+  },
+  "author": "",
+  "license": "ISC"
+}
