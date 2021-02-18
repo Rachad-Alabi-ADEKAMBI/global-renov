@@ -1,4 +1,176 @@
 *,body{
     margin: 0;
+    box-sizing: border-box;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+
+.container{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    display: block;
+
+    .header{
+        width: 80%;
+        margin: 20px auto;
+        height: 100px;
+
+        &__content{
+            h1{
+               color: #09109F;
+                border-bottom: 2px #09109F solid;
+            }
+
+            &__text{
+                color: white;
+                background-color: #084B83;
+                width: auto;
+                height: auto;
+                border: 1px #084B83 solid;
+            }
+        }
+    }
+
+    .heading{
+        width: 80%;
+        display: block;
+        height: 500px;
+        flex-wrap: wrap; 
+        margin: 60px auto;
+        
+        &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+
+            &__text{
+                text-align: left;
+                margin: 0 auto;
+            }
+
+            &__image{
+                width: 400px;
+                
+
+                img{
+                    height: 300px;
+                    width: 350px;
+                    margin: auto;
+                    border-radius: 30px;
+                }
+
+                .btn{
+                    margin: auto; 
+                }
+            }
+        }
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rosybrown;
+        margin: 20px auto;
+
+        &__box{
+            border: 1px green solid;
+            margin: auto;
+            flex: 1;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        &__testimonies{
+            width: 40%;
+            display: block;
+            margin: 20px auto;
+
+            &__title{
+                margin: auto;
+            }
+
+            &__boxes{
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+
+                section{
+                display: block;
+                text-align: left;
+
+                    ul li{
+                    display: inline;
+                    }
+                }
+            }
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img{
+                width: 250px;
+                height: 250px;
+                margin: auto;
+            }
+            
+        }
+        
+    }
+    
+    .images{
+        width: 300px;
+        width: 70%;
+        margin: 40px auto;
+
+        img{
+            width: 350px;
+            height: 350px;
+            margin: auto;
+        }
+    }
+
+    .infos{
+        margin: 40px auto;
+
+        &__section{
+            margin: auto;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &__box{
+                width: 300px;
+                height: 400px;
+                border: 1px solid blueviolet    ;
+            }
+        }
+
+    }
 }
 
