@@ -10,7 +10,6 @@
 button {
   width: 150px;
   height: 50px;
-  background-color: blueviolet;
   border-radius: 30px;
 }
 
@@ -25,85 +24,110 @@ button {
   width: 80%;
   margin: 20px auto 20px auto;
   height: auto;
-  background-color: aqua;
 }
-.container .header__content h1 {
+.container .header h1 {
   color: #09109F;
   border-bottom: 2px #09109F solid;
 }
-.container .header__content__text {
+.container .header__text {
   color: white;
-  background-color: #084B83;
   width: auto;
   height: auto;
   border: 1px #084B83 solid;
   margin: auto auto 50px auto;
 }
-.container .heading {
-  width: 80%;
-  display: block;
-  height: 500px;
-  flex-wrap: wrap;
-  margin: 60px auto;
-}
-.container .heading__content {
+.container .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
+  margin: 15px auto;
+  width: 80%;
 }
-.container .heading__content__text {
+.container .top__left {
   text-align: left;
   margin: 0 auto;
 }
-.container .heading__content__text h2 {
+.container .top__left h2 {
   color: green;
-  margin: auto;
+  margin: auto 10px auto 40px;
   text-align: center;
+  width: 90%;
 }
-.container .heading__content__image {
+.container .top__left ul {
+  margin: 10px auto;
+}
+.container .top__left p {
+  margin: auto 40px;
+}
+.container .top__right {
   width: 400px;
 }
-.container .heading__content__image img {
-  height: 300px;
-  width: 350px;
-  margin: 0 auto;
+.container .top__right img {
+  height: 250px;
+  width: 250px;
+  margin: 30px auto;
   border-radius: 30px;
 }
-.container .heading__content__image .btn {
-  margin: auto;
+.container .top__right .btn {
+  width: 200px;
+  height: 40px;
+  background-color: #2181BE;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 1px 1px #72b0eb;
+  margin: 30px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+.container .top__right .btn:hover {
+  background-color: purple;
 }
 .container .main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .container .main__box {
-  border-bottom: 1px;
-  background-color: rosybrown;
-  margin: 0 20px;
+  margin: 20px;
   flex: 1;
   border-radius: 30px;
+  overflow: hidden;
+  text-align: justify;
+  background-color: powderblue;
 }
-.container .main__box h3 {
-  color: blue;
+.container .main__box__text {
+  color: indianred;
+}
+.container .main__box__text h3 {
+  color: purple;
   margin: 10px auto;
+}
+.container .main__box__text img {
+  width: 80%;
+  height: 220px;
+  margin: 10px auto 0 auto;
+  border-radius: 30px;
 }
 .container .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 1000px;
+  height: 900px;
 }
 .container .content__testimonies {
   width: 40%;
   display: flex;
+  flex-direction: column;
   margin: 20px auto auto 20px;
 }
 .container .content__testimonies__title {
-  margin: auto auto 20px auto;
+  margin: 30px auto 20px auto;
   border-bottom: 1px solid blue;
 }
 .container .content__testimonies__boxes {
@@ -127,72 +151,79 @@ button {
   display: inline;
 }
 .container .content__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background: grey;
   border-radius: 15px;
-  width: 300px;
+  width: 450px;
+  height: 500px;
   text-align: left;
+  margin: 100px 60px auto auto;
 }
-.container .content__text img {
-  width: 250px;
-  height: 250px;
-  margin: 10px auto;
-}
-.container .content__text h2 {
+.container .content__text__title {
   color: blue;
-  margin: auto;
+  margin: 10px auto 0 auto;
 }
-.container .content__text button {
-  margin: auto;
-}
-.container .content__text span {
+.container .content__text h3 {
   width: 90%;
-  margin: auto;
+  margin: 10px auto 0 auto;
   font-weight: bold;
 }
 .container .content__text ul {
-  margin: 30px auto;
+  margin: 10px auto;
   width: 80%;
 }
 .container .content__text ul li {
   list-style: circle;
 }
-.container .images {
-  width: 300px;
-  width: 70%;
-  margin: 40px auto 15px auto;
+.container .content__text .btn {
+  width: 200px;
+  height: 40px;
+  background-color: #2181BE;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 1px 1px #72b0eb;
+  margin: 30px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.container .images img {
-  width: 350px;
-  height: 350px;
+.container .content__text .btn:hover {
+  background-color: purple;
+  font-size: 1.5px;
+}
+.container .image-center {
+  width: 600px;
+  height: 500px;
   margin: auto;
 }
-.container .images h2 {
-  margin: 10px auto;
-  color: blue;
+.container .image-center img {
+  border-radius: 30px;
 }
-.container .infos {
+.container .slider {
   margin: 40px auto;
+  width: 70%;
+  height: 400px;
+  margin: 20px auto;
 }
-.container .infos__section {
+.container .slider__section {
   margin: auto;
-  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
-.container .infos__section__box {
-  width: 300px;
-  height: 300px;
-  border: 1px solid blueviolet;
+.container .slider__section__box {
+  width: 250px;
+  display: flex;
   margin: 0 auto;
 }
-.container .infos__section__box h3 {
+.container .slider__section__box h3 {
   color: #6161f1;
-  border-bottom: px aquamarine solid;
+  margin: 0 auto;
+  border-bottom: 2px aquamarine solid;
 }
 .container .footer {
   display: flex;
@@ -202,86 +233,11 @@ button {
 .container .footer__logo {
   width: 120px;
   height: 70px;
+  float: left;
 }
-.container .footer__diclaimer {
+.container .footer__disclaimer {
   float: right;
-  color: green;
+  color: #3bc43b;
 }
-
-/*
-
-
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box; 
-}
-
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    ;
-}
-
-section{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-}
-
-.container{
-    width: 90%;
-    max-width: 400px;
-    background-color: white;
-    margin: 0 auto;
-    box-shadow: 0px 0px 20px 20px #00000020;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.step{
-    display: none;
-}
-
-.step.active{
-    display: block;
-}
-
-.form-group{
-    width: 100%;
-    margin-top: 20px
-}
-
-.form-group input{
-    width: 100%;
-    border: 1.5px solid rgba(128, 128, 128, 418);
-    padding: 5px;
-    font-size: 18px;
-    margin-top: 5px;
-    border-radius: 4px;
-}
-
-button.next-btn,
-button.previous-btn,
-button.submit-btn{
-    float: right;
-    margin-top: 20px;
-    padding: 10px 30px;
-    border-radius: none;
-    background-color: rgb(180, 220, 255);
-    font-family: 'Helvetica Neue';
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button.previous-btn{
-    float: left;
-}
-
-button.submit-btn{
-    background-color: aquamarine;
-}
-*/
 
 /*# sourceMappingURL=style.css.map */
