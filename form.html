@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulaire essai</title>
+</head>
+<body>
+    <section>
+    <div class="container">
+
+        <form method="post" action="traitement.php">
+            <div class="step step-1 index active">   
+                <form-group>                         
+                    <p>
+                        <label for="role">Vous etes ?</label>
+                        <select name="role" id="role"><option value="france">Propriétaire</option>
+                            <option value="espagne">Locataire</option>
+                        </select></p><button type="button" class="next-btn">Suivant</button> 
+                </form-group>
+            </div>
+            
+            <div class="step step-2">               
+                <p>
+                    <p>
+                        <label for="type">Que souhaitez vous isoler ?</label>
+                        <select name="type" id="TYPE">
+                            <option value="appartment">Appartement</option>
+                            <option value="warehouse">Comble,grenier</option>
+                            <option value="espagne">Garage</option>
+                            <option value="espagne">Vide sanitaire, cave, sous-sol</option>
+                            <option value="espagne">Murs extérieurs</option>
+                        </select>
+                    </p>
+                    
+                    <button type="button" class="previous-btn">Précédent</button>
+                    <button type="button" class="next-btn">Suivant</button>
+                </p>
+            </div>
+
+            <div class="step step-3">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+
+                <div class="form-group">
+                    <label for="postCode">Post-Code</label>
+                    <input type="text" id="postCode" name="postCode">
+                </div>
+
+                <button type="button" class="previous-btn">Prev</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
