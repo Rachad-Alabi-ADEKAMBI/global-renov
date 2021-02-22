@@ -14,12 +14,13 @@
             <div class="step step-1 index active">   
                 <div class="form-group">
                     <div class="details">
-                        <label for="role">Vous etes ?</label> <br>
+                        <label for="role">Vous êtes ? <br>
 
                         <select name="role" id="role">
                             <option value="landlord">Propriétaire</option>
                             <option value="tenant">Locataire</option>
                         </select> <br>
+                    </label>
                     </div>
 
                     <div class="controls">
@@ -31,8 +32,7 @@
             <div class="step step-2"> 
                <div class="form-group">
                 <div class="details">
-                    <p>Que souhaitez vous isoler ?</p> <br>
-
+                    <p>Que souhaitez vous isoler ? <br>
                         <input type="checkbox" name="appartment" id="appartment" /> <label for="appartment">Appartement</label><br />
                         <input type="checkbox" name="warehouse" id="warehouse" /> <label for="warehouse">Comble, grenier</label><br />
                         <input type="checkbox" name="garage" id="garage" /> <label for="garage">Garage</label><br />
@@ -73,7 +73,7 @@
                     <div class="details">
                         <label for="salary" >
                             <p>
-                            Dans quelle fourchette se situe le dernier 
+                            Dans quelle fourchette se situe le <br> dernier 
                             revenu fiscal de votre foyer ?
                             </p>
                         </label>
@@ -98,37 +98,40 @@
                         <p> Veuillez remplir vos informations personnelles </p> <br>
                   
                         <div class="name">
-                            <label for="first-name" class="first-name">Nom: <br>
+                            <label for="first-name" class="first-name">Nom:
                                 <input type="text" id="first-name" name="first-name">
                             </label>
 
-                            <label for="last-name" class="last-name">Prénom: <br>
+                            <label for="last-name" class="last-name">Prénom:
                                 <input type="text" id="last-name" name="last-name">
                             </label>
                         </div>
 
                         <div class="phone">
-                            <label for="phone" class="telephone"> Numéro de téléphone: <br>
+                            <label for="phone" class="telephone"> Numéro de téléphone:
                                 <input type="tel" class="telephone">
                             </label>
                         </div> 
 
                         <div class="more-details">
-                            <label for="email" class="email"> Email: <br>
+                            <label for="email" class="email"> Email:
                                 <input type="email" class="email">
                             </label> <br>
 
-                            <label for="zip-code" class="zip-code"> Code postal: <br>
+                            <label for="zip-code" class="zip-code"> Code postal:
                                 <input type="text" class="zip-code">
                             </label>
                         </div> 
                     </div>
+
+                    <div class="controls">
                         <button type="button" class="previous-btn">Précédent</button>
-                        <button type="button" class="next-btn">Soumettre</button>
+                        <button type="button" class="next-btn">Suivant</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="step step-7">
+            <div class="step step-6">
                 <div class="form-group">
                     <div class="thanks">
                         <p>Merci, <br> notre équipe vous contacte très vite à votre mail <br>
@@ -136,7 +139,7 @@
                     </div> <br>
                 
                     <a href="index.html" id="home-link">
-                        <button type="button" class="next-btn home-btn" id="home-btn">
+                        <button type="button" class="next-btn">
                             Accueil
                         </button>
                     </a>         

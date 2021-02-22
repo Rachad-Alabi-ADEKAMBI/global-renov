@@ -492,11 +492,11 @@ body {
   }
   body .container .top__left {
     width: 340px;
-    margin: 0 0 auto 0;
+    margin: auto 0 auto 0;
   }
   body .container .top__left h2 {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
   }
   body .container .top__right {
     width: 340px;
@@ -560,12 +560,12 @@ body {
     height: 40px;
   }
   body .container .image-center {
-    width: 280px;
+    width: 300px;
     height: 300px;
     margin: 10px auto;
   }
   body .container .image-center img {
-    width: 280px;
+    width: 300px;
     height: 300px;
     margin: 0;
   }

@@ -588,11 +588,11 @@ body{
     
             &__left{
                 width: 340px; 
-                margin: 0 0 auto 0;
+                margin: auto 0 auto 0;
 
                 h2{
                     width: 90%;
-                    margin: 0 auto;
+                    margin: auto;
                 }
             }
     
@@ -674,12 +674,12 @@ body{
         }
 
         .image-center{
-            width: 280px;
+            width: 300px;
             height: 300px;
             margin: 10px auto;
 
             img{
-                width: 280px;
+                width: 300px;
                 height: 300px;
                 margin: 0;
             }
@@ -698,8 +698,7 @@ body{
     
         .mentions-text{
             width: 90%;
-        }
-    
+        }    
     }
     }
 }
