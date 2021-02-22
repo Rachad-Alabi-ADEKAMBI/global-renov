@@ -15,6 +15,7 @@
     cursor: pointer;
     border: none;
     margin: auto 20px;
+    height: 40px;
  }
 
  button:hover{
