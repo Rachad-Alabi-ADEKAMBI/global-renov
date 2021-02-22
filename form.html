@@ -4,64 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets//sass/css/form-style.css">
     <title>formulaire essai</title>
 </head>
 <body>
-    <section>
     <div class="container">
-
-        <form method="post" action="traitement.php">
+        <form method="post" action="form.php">
             <div class="step step-1 index active">   
-                <form-group>                         
-                    <p>
-                        <label for="role">Vous etes ?</label>
-                        <select name="role" id="role"><option value="france">Propriétaire</option>
-                            <option value="espagne">Locataire</option>
-                        </select></p><button type="button" class="next-btn">Suivant</button> 
-                </form-group>
+                <div class="form-group">
+                    <div class="details">
+                        <label for="role">Vous etes ?</label> <br>
+
+                        <select name="role" id="role">
+                            <option value="landlord">Propriétaire</option>
+                            <option value="tenant">Locataire</option>
+                        </select> <br>
+                    </div>
+
+                    <div class="controls">
+                        <button type="button" class="next-btn start-btn" id="start-btn">Suivant</button> 
+                    </div>
+                </div>
             </div>
             
-            <div class="step step-2">               
-                <p>
-                    <p>
-                        <label for="type">Que souhaitez vous isoler ?</label>
-                        <select name="type" id="TYPE">
-                            <option value="appartment">Appartement</option>
-                            <option value="warehouse">Comble,grenier</option>
-                            <option value="espagne">Garage</option>
-                            <option value="espagne">Vide sanitaire, cave, sous-sol</option>
-                            <option value="espagne">Murs extérieurs</option>
-                        </select>
-                    </p>
-                    
+            <div class="step step-2"> 
+               <div class="form-group">
+                <div class="details">
+                    <p>Que souhaitez vous isoler ?</p> <br>
+
+                        <input type="checkbox" name="appartment" id="appartment" /> <label for="appartment">Appartement</label><br />
+                        <input type="checkbox" name="warehouse" id="warehouse" /> <label for="warehouse">Combles, greniers</label><br />
+                        <input type="checkbox" name="garage" id="garage" /> <label for="garage">Epinards</label><br />
+                        <input type="checkbox" name="vault" id="vault" /> <label for="vault">Huitres</label>
+                    </p>   
+                </div>
+
+                <div class="controls">
                     <button type="button" class="previous-btn">Précédent</button>
                     <button type="button" class="next-btn">Suivant</button>
-                </p>
+                </div>
+               </div>
             </div>
 
-            <div class="step step-3">
+            <div class="step step-3"> 
                 <div class="form-group">
-                    <label for="country">Country</label>
-                    <input type="text" id="country" name="country">
-                </div>
+                    <div class="details">
+                        <label for="numberOfResidents">Nombre de personnes dans le foyer</label> <br>
+                            <select name="numberOfResidents" id="numberOfResidents">
+                                <option value="number1">1</option>
+                                <option value="number2" selected>2</option>
+                                <option value="number3">3</option>
+                                <option value="number4">4</option>
+                                <option value="number5">5</option>
+                                <option value="number+5">plus que 5</option>
+                            </select> <br>
+                    </div>
 
+                    <div class="controls">
+                        <button type="button" class="previous-btn">Précédent</button>
+                        <button type="button" class="next-btn">Suivant</button>
+                    </div>
+                </div>                       
+            </div>
+
+            <div class="step step-4"> 
                 <div class="form-group">
-                    <label for="country">City</label>
-                    <input type="text" id="city" name="city">
-                </div>
+                    <div class="details">
+                        <label for="salary" >
+                            <p>
+                            Dans quelle fourchette se situe le dernier 
+                            revenu fiscal de votre foyer ?
+                            </p>
+                        </label>
+                        <br>
+                                <select name="salary" id="salary">
+                                    <option value="salary1">Moins de 36 080€ /ans </option>
+                                    <option value="salary2" >Entre 36 080€ et 43 294€</option>
+                                    <option value="salary3">Plus de 43 294€</option>
+                                </select> <br>
+                    </div>
+    
+                    <div class="controls">
+                        <button type="button" class="previous-btn">Précédent</button>
+                        <button type="button" class="next-btn">Suivant</button>
+                    </div>
+                </div>           
+            </div>
 
+            <div class="step step-5"> 
                 <div class="form-group">
-                    <label for="postCode">Post-Code</label>
-                    <input type="text" id="postCode" name="postCode">
-                </div>
+                    <div class="details">  
+                        <p> Veuillez remplir vos informations personnelles </p> <br>
+                  
+                        <div class="name">
+                            <label for="first-name" class="first-name">Nom: <br>
+                                <input type="text" id="first-name" name="first-name">
+                            </label>
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" class="submit-btn">Submit</button>
+                            <label for="last-name" class="last-name">Prénom: <br>
+                                <input type="text" id="last-name" name="last-name">
+                            </label>
+                        </div>
+
+                        <div class="phone">
+                            <label for="phone" class="telephone"> Numéro de téléphone: <br>
+                                <input type="tel" class="telephone">
+                            </label>
+                        </div> 
+
+                        <div class="more-details">
+                            <label for="email" class="email"> Email: <br>
+                                <input type="email" class="email">
+                            </label> <br>
+
+                            <label for="zip-code" class="zip-code"> Code postal: <br>
+                                <input type="text" class="zip-code">
+                            </label>
+                        </div> 
+                    </div>
+                        <button type="button" class="previous-btn">Précédent</button>
+                        <button type="button" class="next-btn">Soumettre</button>
+                </div>
+            </div>
+
+            <div class="step step-7">
+                <div class="form-group">
+                    <div class="thanks">
+                        <p>Merci, <br> notre équipe vous contacte très vite à votre mail <br>
+                        pour la deuxième étape. </p>
+                    </div> <br>
+                
+                    <a href="index.html" id="home-link">
+                        <button type="button" class="next-btn home-btn" id="home-btn">
+                            Accueil
+                        </button>
+                    </a>         
+                </div>
             </div>
         </form>
     </div>
-</section>
 <script src="script.js"></script>
 </body>
 </html>

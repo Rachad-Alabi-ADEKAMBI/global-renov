@@ -1,22 +1,22 @@
 /*fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+a{
+    text-decoration: none;
+}
+
 *,
 body{
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
-    line-height: 2em;
+    line-height: 1.5em;
     display: flex;
     flex-direction: column;
     font-family: "montserrat", sans-serif;
 }
 
-button{
-    
-}
-
 .container{
-    width: 80%;
+    width: 90%;
     text-align: center;
     position: relative;
     margin: auto;
@@ -24,21 +24,43 @@ button{
    
 
     .header{
-        width: 80%;
+        width: 100%;
         margin: 20px auto 20px auto;
         height: auto;
+        text-align: left;
+
+        .logo{
+            margin: 0 auto;
+            color: rgb(104, 240, 104);
+            font-size: 1.5em;
+            width: 40%;
+            display: inline;
+            cursor: pointer;
+    }
 
             h1{
-               color: #09109F;
+               color: #2E669A;
+               background-color: #ECEFF0;
+               border: 1px solid #ECEFF0;
+               text-transform: uppercase;
                 border-bottom: 2px #09109F solid;
+                margin: 10px auto 0 auto;
+                text-align: center;
+                width: 80%;
             }
 
-            &__text{
-                color: white;
+            p{
+                color: #1A5353;
+                border-bottom: 1px ;
                 width: auto;
                 height: auto;
-                border: 1px #084B83 solid;
-                margin: auto auto 50px auto;
+                border-bottom: 1px #1A5353 solid;
+                margin: 10px auto;
+                text-align: left;
+                font-weight: bold;
+                padding: 2px;
+                font-size: 1.1em;
+                text-transform: uppercase;
             }
     }
 
@@ -46,7 +68,7 @@ button{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 15px auto;
+        margin: 15px auto 70px auto;
         width: 80%;
 
             &__left{
@@ -55,51 +77,65 @@ button{
 
                 h2{
                     color: green;
-                    margin: auto 10px auto 40px;
-                    text-align: center;
-                    width: 90%;
+                    margin: auto 10px auto 50px;
+                    text-align: left;
+                    width: 70%;
+                   
                 }
 
                 ul{
-                    margin: 10px auto;
+                    margin: 10px auto auto 0;
+                    text-align: left;
                 } 
 
+                li{
+                    margin: 5px auto auto 0;
+                    display: flex;
+                    flex-direction: row;
+
+                    i{
+                        color: green;
+                        font-size: 1.3em;
+                    }
+                }
+
                 p{
-                    margin:auto 40px;
+                    margin:auto 10px;
                 }
             }
 
             &__right{
                 width: 400px;
+                margin: 70px auto 5px 20px;
 
                 img{
-                    height: 250px;
-                    width: 250px;
-                    margin: 30px auto;
+                    height: 300px;
+                    width: 300px;
+                    margin: 10px auto 50px auto;
                     border-radius: 30px;
                 }
 
                 .btn{
-                    width: 200px;
+                    width: 250px;
                     height: 40px;
-                    background-color: #2181BE;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    color: white;
-                    font-weight: bold;
-                    box-shadow: 2px 2px 1px 1px rgb(114, 176, 235);
-                    margin: 30px auto;
+                    margin: 10px auto;
                     text-align: center;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     border: none;
-                    width: 150px;
-                    height: 50px;
-                    border-radius: 30px;
+                    color: white;
+                    bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: green;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
                 }
     
                 .btn:hover{
-                    background-color: purple;
+                    background-color: #2E669A;
+                    font-weight: bold;
                 } 
             }
     }
@@ -107,41 +143,69 @@ button{
     .main{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
+        margin: 20px auto;
 
         &__box{
-            margin: 20px;
+            margin: 0 20px auto 20px;
             flex: 1;
             border-radius: 30px;
-            overflow: hidden;
-            text-align: justify;
-            background-color: powderblue;
-
-            &__text{
-                color: indianred;
-
+            border: 1px #2E669A solid;
+            overflow: hidden; 
+             color: black;
+            background-color: #ECEFF0;
+            height: 600px;
+            text-align: center; 
+                    
                 h3{
-                    color: purple;
-                    margin: 10px auto;
+                    color: #2E669A;
+                    margin: 10px auto 20px auto;
+                    text-transform: uppercase;
+                    font-size: 1.1em;
+                    border-bottom: 1px #2E669A solid;
+                    width: 100%;
+                    height: 60px;
+                    padding-top: 5px;
                 }
 
                 img{
-                    width: 80%;
-                    height: 220px;
-                    margin: 10px auto 0 auto;
+                    width: 250px;
+                    height: 250px;
                     border-radius: 30px;
+                    bottom: 10px;
+                    margin: 40px auto 40px auto;
                 }
-            }
+                
+                p{
+                    width: 90%;
+                    margin: 5px auto;
+                    text-align: justify;
+                }
+
+                ul{
+                    margin: 10px auto;
+                    text-align: left;
+                }
+
+                li{
+                    margin: 5px auto;
+                    display: inline;
+                }
+
+                i{
+                    margin: auto 5px;
+                    color: #2E669A;
+                    font-size: 1.1em;
+                }      
         }
-        }
+    }
 
     .content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height: 900px;
+        height: 700px;
+        margin: auto;
 
         &__testimonies{
             width: 40%;
@@ -151,7 +215,8 @@ button{
 
             &__title{
                 margin: 30px auto 20px auto;
-                border-bottom: 1px solid blue;
+                color: #2E669A;
+                border-bottom:#2E669A 1px solid;
             }
 
             &__boxes{
@@ -159,61 +224,75 @@ button{
                 display: flex;
                 flex-direction: column;
                 padding-top: 0;
-
+               
                 section{
                 display: flex;
                 flex-direction: column;
-                text-align: left;
-                background-color: honeydew;
+                justify-content: space-between;
+                text-align: justify;
                 margin: 20px;
-                    
+                
+                p{
+                    margin: auto;
+                }
                 span{
                     font-weight: bold;
-                    margin: 5px auto;
-                }
-
-                    ul li{
-                    display: inline;
-                    }
+                    margin: 5px auto auto 0;
                 }
             }
+                    ul{
+                        margin: 5px auto auto 0;
+                    
+                        li{
+                        display: inline;
+                        margin: auto 0;                         
+                        }      
+                     }
+                     
+                }
         }
 
         &__text{
-            background: grey;
+            box-shadow: 0px 0px 20px 20px #00000020;
+            background-color: aliceblue;
             border-radius: 15px;
             width: 450px;
             height: 500px;
             text-align: left;
-            margin: 100px 60px auto auto;
+            margin: 100px auto;
 
             &__title{
                 color: blue;
-                margin: 10px auto 0 auto ;
+                margin: 20px auto 0 auto ;
             } 
             
             h3{
                 width: 90%;
-                margin: 10px auto 0 auto;
+                margin: 20px auto;
                 font-weight: bold;
             }
 
-            ul{
+
+            ol{
                 margin: 10px auto;
-                width: 80%;
 
                 li{
-                    list-style: circle;
+                 margin: 10px auto auto 0;  
+                 cursor: pointer; 
+                }
+
+                li:hover{
+                    color: #2E669A;
+                    border-bottom: 1px solid #2E669A;
                 }
             }
 
-            l.ink-btn{
-                width: 200px;
+            .link-btn{
+                width: 250px;
+                font-size: 18px;
                 height: 40px;
                 background-color: #2181BE;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 color: white;
-                font-weight: bold;
                 box-shadow: 2px 2px 1px 1px rgb(114, 176, 235);
                 margin: 30px auto;
                 text-align: center;
@@ -221,72 +300,353 @@ button{
                 align-items: center;
                 cursor: pointer;
                 border: none;
-                width: 150px;
-                height: 50px;
                 border-radius: 30px;
+                font-family: 'Helvetica Neue';
             }
 
-            .btn:hover{
-                background-color: purple;
-                font-size: 1.5px;
+            .link-btn:hover{              
+                background-color: #2E669A;
+                font-weight: bold;
             }         
         }    
     }
 
     .image-center{
-        width: 600px;
+        width: 800px;
         height: 500px;
-        margin: auto;
+        margin: 80px auto 80px auto;
        
         img{
             border-radius: 30px;
+            margin: 0 auto;
         }
     }
 
     .slider{
-        margin: 40px auto;
-        width: 70%;
+        margin: 60px auto;
         height: 400px;
-        margin: 20px auto;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
 
-        &__section{
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-            height: 100%;
-
-            &__box{
+            &__section{
                 width: 250px;
+                height: 300px;
+                border-radius: 15px;
+                border: 5px black solid;
+                padding-top: 10px;
                 display: flex;
-                margin: 0 auto;
+                margin: auto 20px auto 20px;
+                text-align: justify;
+                padding-top: 5px;
 
                 h3{
-                    color: rgb(97, 97, 241);
-                    margin: 0 auto;
-                    border-bottom: 2px aquamarine solid;
+                    color: black;
+                    width: 80%;
+                    font-size: 1.2em;
+                    margin: 10px auto;
+                    border-bottom: 5px black solid;
+                }
+                
+                p{
+                    margin: 10px auto;
+                    width: 90%;
+                }
+
+                i {
+                    color: black;
+                    font-size: 3.5em;
                 }
             }
-        }
-
     }
+
+    .mentions.title{
+        color: #2E669A;
+        border-bottom: 2px #2E669A solid;
+        font-size: 1.1em;
+    }
+    .mentions-text{
+        font-size: 1.2em;
+        border-bottom: 1px solid #2E669A;
+        width: 60%;
+        line-height: 2em;
+        text-align: justify;
+        margin: auto;
+    }
+    
 
     .footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
+        background-color: #2E669A;
+        height: 30px;
+        color: white;
 
         &__logo{
-           width: 120px;
-           height: 70px;
-           float: left;
+            float: left;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+
+        &__logo:hover{
+            font-size: 1.3em;
         }
 
         &__disclaimer{
-            float: right;
-            color: rgb(59, 196, 59);
+            a{
+               float: right;
+               font-size: 1.1em;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            }
+            a:hover{
+                color: white;
+                font-size: 1.2em;
+            }
+        }
+
+    }
+}
+
+
+/*responsive for max 1280px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .container{
+        width: 100%;
+
+        .main{
+            margin: 50px auto;
+
+            &__box{
+                height: 610px;
+            }
+        }
+
+        .content{
+            &__boxes{
+
+            }
+        }
+    }
+}
+
+/*responsive for max 1024px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        width: 100%;
+        margin: auto;
+
+        .header{
+            width: 100%;
+            margin: auto;
+        }
+
+        .top{
+            flex-direction: column-reverse;
+            width: 90%;
+
+            &__left{
+                width: 80%;
+                margin: 10px auto;
+                
+                h2{
+                    width: 100%;
+                    margin: auto;
+                    text-align: center;
+                }
+
+                p{
+                    margin: 10px auto auto 0;
+                }
+
+            }
+
+            &__right{
+                width: 600px;
+                height: 550px;
+                margin: 10px auto 0 auto;
+
+                img{
+                    height: 400px;
+                    width: 500px;
+                    margin: 10px auto;
+                }
+            }
+        }
+
+        .main{
+            flex-direction: column;
+
+            &__box{
+                width: 90%;
+                margin: 10px auto;
+                height: max-content;
+
+                &__text{
+
+                    img{
+                        width: 400px;
+                        height: 300px;
+                        margin: 20px auto 20px auto;
+                    }
+                }
+            }
+        }
+
+        .content{
+            margin: auto;
+            height: max-content;
+
+            &__testimonies{
+                width: 45%;
+                margin: auto 0;
+
+            }
+
+            &__text{
+                width: 50%;
+                height: 550px;
+                margin: 200px auto;
+            }
+        }
+
+        .image-center{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto 50px auto;
+
+            img{
+                width: 500px;
+                height: 400px;
+            }
+        }
+
+        .slider{
+            width: 100%;
+            height: auto;
+
+
+            &__section{
+                width: 210px;
+                height: 350px;
+                margin: auto 5px auto 0;
+            }
+        }
+    }
+}
+
+/*responsive for max 768px */
+@media screen and (min-width: 350px) and (max-width: 767px) {
+    .container{
+        width: 100%;
+    
+        .header{
+            width: 100%;
+            margin: 15px auto 0 auto;
+
+            h1{
+                width: 100%;
+                font-size: 1.3em;
+            }
+        }
+    
+        .top{
+            width: 340px;
+            flex-direction: column-reverse;
+            height: auto;
+    
+            &__left{
+                width: 90%; 
+                margin: 0 auto;
+                h2{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+    
+            &__right{
+                width: 340px;
+                height: 360px;
+                margin: 10px auto;
+
+                img{
+                    margin: 20px auto 0 auto;
+                }
+
+                .btn{
+                    margin: 30px auto;
+                }
+            }
+        }
+
+        .main{
+            flex-direction: column;
+            height: max-content;
+            margin: auto;
+            width: 350px;
+
+            &__box{
+                height: auto;
+                margin: 10px auto 10px auto;
+                width: 340px;
+
+                &__text{
+                    img{
+                    }
+                }
+            }
+        }
+
+        .content{
+            height: auto;
+            flex-direction: column;
+            width: 90%;
+
+            &__testimonies{
+                width: 330px;
+                margin: 10px auto;
+            }
+
+            &__text{
+                width: 330px;
+                height: auto;
+            }
+        }
+
+        .image-center{
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+
+            img{
+                width: 300px;
+                height: 300px;
+                margin: 0;
+            }
+        }
+
+        .slider{
+            height: auto;
+            flex-direction: column;
+            width: 340px;
+            margin: auto;
+
+            &__section{
+                margin: 20px auto;
+            }
         }
     }
 }
