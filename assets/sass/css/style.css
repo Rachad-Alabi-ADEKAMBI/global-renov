@@ -25,7 +25,6 @@ body {
   width: 100%;
   margin: 20px auto 20px auto;
   height: auto;
-  text-align: left;
 }
 .container .header .logo {
   margin: 0 auto;
@@ -38,9 +37,9 @@ body {
 .container .header h1 {
   color: #2E669A;
   background-color: #ECEFF0;
-  border: 1px solid #ECEFF0;
+  border-radius: 15px;
   text-transform: uppercase;
-  border-bottom: 2px #09109F solid;
+  border-bottom: 2px #2E669A solid;
   margin: 10px auto 0 auto;
   text-align: center;
   width: 80%;
@@ -103,7 +102,7 @@ body {
 }
 .container .top__right .btn {
   width: 250px;
-  height: 40px;
+  height: 60px;
   margin: 10px auto;
   text-align: center;
   justify-content: center;
@@ -229,8 +228,10 @@ body {
   margin: 100px auto;
 }
 .container .content__text__title {
-  color: blue;
+  color: #2E669A;
   margin: 20px auto 0 auto;
+  font-weight: bold;
+  font-size: 1.8em;
 }
 .container .content__text h3 {
   width: 90%;
@@ -251,7 +252,7 @@ body {
 .container .content__text .link-btn {
   width: 250px;
   font-size: 18px;
-  height: 40px;
+  height: 60px;
   background-color: #2181BE;
   color: white;
   box-shadow: 2px 2px 1px 1px #72b0eb;
@@ -453,86 +454,132 @@ body {
     height: 350px;
     margin: auto 5px auto 0;
   }
+
+  .mentions-text {
+    width: 90%;
+  }
 }
 /*responsive for max 768px */
 @media screen and (min-width: 350px) and (max-width: 767px) {
-  .container {
-    width: 100%;
+  body {
+    text-align: center;
+    width: 350px;
   }
-  .container .header {
+  body .container {
+    width: 100%;
+    margin: auto;
+  }
+  body .container .header {
     width: 100%;
     margin: 15px auto 0 auto;
+    text-align: center;
   }
-  .container .header h1 {
-    width: 100%;
-    font-size: 1.3em;
+  body .container .header h1 {
+    width: 90%;
+    font-size: 1.2em;
   }
-  .container .top {
+  body .container .header p {
+    font-size: 0.9em;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  body .container .top {
     width: 340px;
     flex-direction: column-reverse;
     height: auto;
+    margin: 10px auto;
   }
-  .container .top__left {
+  body .container .top__left {
+    width: 340px;
+    margin: 0 0 auto 0;
+  }
+  body .container .top__left h2 {
     width: 90%;
     margin: 0 auto;
   }
-  .container .top__left h2 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .container .top__right {
+  body .container .top__right {
     width: 340px;
     height: 360px;
     margin: 10px auto;
   }
-  .container .top__right img {
+  body .container .top__right img {
     margin: 20px auto 0 auto;
   }
-  .container .top__right .btn {
-    margin: 30px auto;
+  body .container .top__right .btn {
+    margin: 30px auto 30px auto;
+    height: 40px;
   }
-  .container .main {
+  body .container .main {
     flex-direction: column;
     height: max-content;
-    margin: auto;
-    width: 350px;
+    margin: auto 0 auto 0;
+    width: 100%;
   }
-  .container .main__box {
+  body .container .main__box {
     height: auto;
     margin: 10px auto 10px auto;
-    width: 340px;
+    width: 90%;
   }
-  .container .content {
+  body .container .main__box ul li {
+    width: 100%;
+    margin: 10px 0 auto 0;
+  }
+  body .container .main__box p {
+    margin: 10px auto;
+  }
+  body .container .main__box img {
+    width: 90%;
+  }
+  body .container .content {
     height: auto;
     flex-direction: column;
     width: 90%;
   }
-  .container .content__testimonies {
+  body .container .content h3 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  body .container .content__testimonies {
     width: 330px;
     margin: 10px auto;
   }
-  .container .content__text {
-    width: 330px;
-    height: auto;
+  body .container .content__testimonies__boxes {
+    margin: auto;
   }
-  .container .image-center {
+  body .container .content__testimonies__boxes section {
+    margin: 10px auto;
+    width: 80%;
+  }
+  body .container .content__text {
     width: 300px;
+    height: auto;
+    margin: 40px auto;
+  }
+  body .container .content .link-btn {
+    height: 40px;
+  }
+  body .container .image-center {
+    width: 280px;
     height: 300px;
     margin: 10px auto;
   }
-  .container .image-center img {
-    width: 300px;
+  body .container .image-center img {
+    width: 280px;
     height: 300px;
     margin: 0;
   }
-  .container .slider {
+  body .container .slider {
     height: auto;
     flex-direction: column;
-    width: 340px;
-    margin: auto;
+    width: 100%;
+    margin: 10px auto;
   }
-  .container .slider__section {
+  body .container .slider__section {
     margin: 20px auto;
+  }
+  body .container .mentions-text {
+    width: 90%;
   }
 }
 
