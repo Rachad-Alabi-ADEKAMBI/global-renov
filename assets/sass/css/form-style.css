@@ -1,0 +1,148 @@
+/*main rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+ }
+
+ button {
+    bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(180, 220, 255);
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: auto 20px;
+ }
+
+ button:hover{
+    background-color: #2E669A;
+    font-weight: bold; 
+ }
+ 
+ body{
+     font-family: "montserrat", sans-serif;
+     color: #555555;
+    }
+    
+    /*container*/
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 90%;
+        max-width: 400px;
+        margin: 50px auto;
+        box-shadow: 0px 0px 20px 20px #00000020;
+        background-color: aliceblue;
+         padding: 20px;
+         border-radius: 8px;
+         cursor: pointer;
+        height: 80vh;
+ }
+ 
+ .step{
+     display: none;
+ }
+ 
+ .step.active{
+     display: block;
+ }
+ 
+ .form-group{
+     cursor: pointer;
+     width: 100%;
+     margin: 20px auto auto auto; 
+     position: relative;
+     height: 100%;
+ }
+ 
+ 
+ .form-group select{
+     margin: 20px 100px auto auto;
+ }
+ 
+ .form-group input{
+     width: 100%;
+     border: 1.5px solid rgba(128, 128, 128, 418);
+     padding: 5px;
+     font-size: 18px;
+     margin-top: 5px;
+     border-radius: 4px;
+ }
+ .details{
+     height: 80%;
+     width: 80%;
+     margin: 10px auto;
+     text-align: left;
+ }
+ 
+ .details .name{
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ p{
+     display: inline;
+ }
+ .first-name,
+ .last-name{
+    width: 40%;
+    margin: 5px 15px auto 0;
+ }
+ 
+ .phone{
+    margin: 10px auto auto 0;
+    width: 200px;
+ }
+ 
+ .more-details{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .email{
+    margin: 5px 15px auto 0;
+    width: 250px;
+ }
+ 
+ .zip-code{
+    margin: 5px auto auto 0;
+    width: 150px;
+ }
+ 
+ button.previous-btn{
+     float: left;
+     margin-top: 20px;
+ }
+
+ button.next-btn{
+    float: right;
+    margin-top: 20px;
+ }
+ 
+ button.submit-btn{
+     background-color: aquamarine;
+ }
+ 
+ #home-link{
+     margin: 20px;
+     text-align: center;
+ }
+ 
+ .wrapper{
+     position: absolute;
+     top: 35%;
+     left: 50%;
+ }
+ 
+ .controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
