@@ -45,7 +45,7 @@ body{
   min-height: 100vh;
   overflow: hidden;
   box-shadow: 0px 0px 20px 20px #00000020;
-  background-color: rgba(255, 255, 255, .2);
+      background-color: aliceblue;
       border-radius: 15px;
       margin: 50px auto;
 }
@@ -234,21 +234,24 @@ form .page .btns button.next{
   width: 90%;
   justify-content: space-between;
   margin: 50px auto;
-  
-} 
+  background-color: rgb(215, 229, 230);
 
+  /*
+  background-image: url("assets/images/img2.jpeg");
+  */
+} 
 
 .header__text{
   h1{
     margin: 80px auto;
     font-size: 1.4em;
     color: #2E669A;
-    background-color: #ECEFF0;
-    border-radius: 15px;
-    text-transform: uppercase;
-    border-bottom: 2px #2E669A solid;
-    text-align: center;
-    width: 60%;
+               background-color: #ECEFF0;
+               border-radius: 15px;
+               text-transform: uppercase;
+                border-bottom: 2px #2E669A solid;
+                text-align: center;
+                width: 60%;
   }
 
   ul{
@@ -404,6 +407,7 @@ p{
           margin: 20px auto;
           font-weight: bold;
       }
+
 
       ol{
           margin: 10px auto auto 50px;
@@ -573,15 +577,14 @@ p{
           }
 
           .formulaire{
-            flex: 1;
-            height: auto;
-            min-height: auto;
-            overflow: hidden;
-
+          width: 400px;
+          margin:30px  auto;
+          height: 80vh;
+          min-height: 80vh;
+  
             .container-form{
-              height: auto;
-              min-height: auto;
-              overflow: hidden;
+              width: 330px;
+              margin: auto;
             }
           }
         }
@@ -599,212 +602,15 @@ p{
         }
 
         .testimonies{
-          &__boxes{
-            section{
-              width: 310px;
-            }
-          }
+          
         }
     }
   }
 }
+/*
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 1024px) and (max-width: 1279px){
   body{
-      width: 100%;
-      margin: auto;
-
-     .container{    
-        header{
-          flex-direction: column-reverse;
-
-            .formulaire{
-                height: auto;
-                min-height: auto;
-
-                  .container-form{
-                      height: auto;
-                      min-height: auto;
-                  }
-              }
-
-            &__text{
-              margin: 10px auto;
-                h1{
-                    margin: 10px auto;
-                    width: 90%;
-                  }
-            }
-         }
-
-        .slider{
-          flex-direction: row;
-          height: fit-content;
-          text-align: center;
-          margin: 10px auto 20px auto;
-
-          &__section{
-            width: 180px;
-            margin: 10px 5px auto 5px;
-            height: 350px;
-
-            p{
-              text-align: left;
-              margin: auto;
-            }
-
-            i{
-              margin: auto auto 5px auto;
-            }
-          }
-
-        }
-
-        .content{
-          flex-direction: column-reverse;
-          height: 900px;
-
-          img{
-            margin: 50px auto;
-          }
-
-          &__text{
-            margin: auto;
-          }
-        }
-
-        .main{
-          flex-direction: column;
-
-          &__box{
-            width: 80%;
-            margin: 20px auto;
-
-            p {
-              width: 80%;
-              margin: auto;
-              text-align: left;
-
-              ul{
-                margin-left: 0;
-                text-align: left;
-
-                li{
-                  text-align: left;
-                  margin-left: 0;
-                }
-
-              }
-
-            }
-
-            img{
-              width: 400px;
-            }
-          }
-        }
-
-        .testimonies{
-          flex-direction: column;
-
-          &__boxes{
-            flex-direction: column;
-            margin: 20px auto;
-            
-            section{
-              margin: 15px auto;
-            }
-          }
-        }
-
-      }
-  }
-}
-
-@media screen and (min-width: 350px) and (max-width: 767px){
-  body{
-    width: 100%;
-
-    .container{
-      width: 100%;
-     
-      .header{
-        flex-direction: column-reverse;
-        width: 100%;
-
-          .formulaire{
-              height: auto;
-              min-height: auto;
-              width: 330px;
-
-                .container-form{
-                    height: auto;
-                    min-height: auto;
-                }
-          }
-
-          &__text{
-            margin: 10px auto;
-              h1{
-                }
-          }
-      }
-
-      .slider{
-        flex-direction: column;
-        height: 800px;
-
-        &__section{
-          width: 300px;
-          height: auto;
-          margin: 15px auto;
-        }
-      }
-
-      .content{
-        height: 860px;
-        flex-direction: column-reverse;
-        margin: auto;
-
-        img{
-          margin: 30px auto;
-          width: 330px;
-        }
-
-        &__text{
-          margin: 15px auto;
-          width: 330px;
-        }
-      }
-
-      .main{
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-
-        &__box{
-          margin: 20px auto;
-        }
-      }
-
-      .testimonies{
-        h3{
-          font-size: 1em;
-        }
-
-        &__boxes{
-          flex-direction: column;
-
-          section{
-            width: 90%;
-            margin: 15px auto;
-          }
-        }
-      }
-      
-      .footer{
-        flex-direction: column;
-      }
-    }
-  }
-}
+     width: 100%;
+  margin: auto;
+}}*/
