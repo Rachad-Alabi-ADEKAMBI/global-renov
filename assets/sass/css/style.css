@@ -8,12 +8,37 @@ ul {
 
 ul li {
   list-style: none;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+ol li {
+  font-size: 1.1em;
+}
+
+.comment {
+  border-bottom: 2px #2E669A solid;
+  width: auto;
+}
+
+.important {
+  color: #2E669A;
+  margin: auto 0;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-top: 10px;
   width: 100%;
+}
+
+input {
+  border: none;
 }
 
 * {
@@ -35,8 +60,9 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
+  background: rgba(138, 183, 212, 0.2);
 }
 
 .formulaire {
@@ -48,14 +74,12 @@ body {
   box-shadow: 0px 0px 20px 20px #00000020;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  margin: 50px auto;
+  margin: 10px auto;
 }
-
-::selection {
+.formulaire ::selection {
   color: #fff;
 }
-
-.container-form {
+.formulaire .container-form {
   width: 330px;
   text-align: center;
   border-radius: 30px;
@@ -63,67 +87,66 @@ body {
   height: 90vh;
   float: right;
 }
-
-.container-form h2 {
+.formulaire .container-form h2 {
   font-size: 35px;
   font-weight: 600;
   margin: 0 0 30px 0;
 }
-
-.container-form .form-outer {
+.formulaire .container-form .form-outer {
   width: 100%;
   overflow: hidden;
 }
-
-.container-form .form-outer form {
+.formulaire .container-form .form-outer form {
   display: flex;
   width: 400%;
 }
-
-.form-outer form .page {
+.formulaire .form-outer form .page {
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
-
-.form-outer form .page .title {
+.formulaire .form-outer form .page .title {
   text-align: left;
   font-size: 25px;
   font-weight: 500;
 }
-
-.form-outer form .page .field {
+.formulaire .form-outer form .page .field {
   width: 330px;
   height: 45px;
   margin: 45px 0;
   display: flex;
   position: relative;
-}
-
-form .page .field .label {
-  position: absolute;
-  top: -30px;
+  text-align: left;
+  font-size: 18px;
   font-weight: 500;
 }
-
-form .page .field input {
+.formulaire form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  margin: auto 0;
+}
+.formulaire form .page .field input {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
 }
-
-form .page .field select {
+.formulaire form .page .field select {
   width: 100%;
   padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
   height: 50px;
   margin: auto auto 30px auto;
 }
-
-form .page .field button {
+.formulaire form .page .field button {
   width: 100%;
   height: calc(100% + 5px);
   border: none;
@@ -139,45 +162,37 @@ form .page .field button {
   transition: 0.5s ease;
   font-family: "Helvetica Neue";
 }
-
-form .page .field button:hover {
+.formulaire form .page .field button:hover {
   background-color: #2E669A;
   font-weight: bold;
 }
-
-form .page .btns button {
+.formulaire form .page .btns button {
   margin-top: -20px !important;
 }
-
-form .page .btns button.prev {
+.formulaire form .page .btns button.prev {
   margin-right: 3px;
   font-size: 17px;
 }
-
-form .page .btns button.next {
+.formulaire form .page .btns button.next {
   margin-left: 3px;
 }
-
-.container-form .progress-bar {
+.formulaire .container-form .progress-bar {
   display: flex;
   margin: 40px 0;
   user-select: none;
 }
-
-.container-form .progress-bar .step {
+.formulaire .container-form .progress-bar .step {
   text-align: center;
   width: 100%;
   position: relative;
 }
-
-.container-form .progress-bar .step p {
+.formulaire .container-form .progress-bar .step p {
   font-weight: 500;
   font-size: 18px;
   color: #000;
   margin-bottom: 8px;
 }
-
-.progress-bar .step .bullet {
+.formulaire .progress-bar .step .bullet {
   height: 25px;
   width: 25px;
   border: 2px solid #000;
@@ -189,24 +204,20 @@ form .page .btns button.next {
   font-size: 17px;
   line-height: 25px;
 }
-
-.progress-bar .step .bullet.active {
+.formulaire .progress-bar .step .bullet.active {
   border-color: #72b0eb;
   background: #72b0eb;
 }
-
-.progress-bar .step .bullet span {
+.formulaire .progress-bar .step .bullet span {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-
-.progress-bar .step .bullet.active span {
+.formulaire .progress-bar .step .bullet.active span {
   display: none;
 }
-
-.progress-bar .step .bullet:before,
-.progress-bar .step .bullet:after {
+.formulaire .progress-bar .step .bullet:before,
+.formulaire .progress-bar .step .bullet:after {
   position: absolute;
   content: "";
   bottom: 11px;
@@ -215,30 +226,26 @@ form .page .btns button.next {
   width: 44px;
   background: #262626;
 }
-
-.progress-bar .step .bullet.active:after {
+.formulaire .progress-bar .step .bullet.active:after {
   background: #72b0eb;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
 }
-
 @keyframes animate {
   100% {
     transform: scaleX(1);
   }
 }
-.progress-bar .step:last-child .bullet:before,
-.progress-bar .step:last-child .bullet:after {
+.formulaire .progress-bar .step:last-child .bullet:before,
+.formulaire .progress-bar .step:last-child .bullet:after {
   display: none;
 }
-
-.progress-bar .step p.active {
+.formulaire .progress-bar .step p.active {
   color: #d43f8d;
   transition: 0.2s linear;
 }
-
-.progress-bar .step .check {
+.formulaire .progress-bar .step .check {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -246,10 +253,25 @@ form .page .btns button.next {
   transform: translate(-50%, -50%);
   display: none;
 }
-
-.progress-bar .step .check.active {
+.formulaire .progress-bar .step .check.active {
   display: block;
   color: #fff;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-size: 1.4em;
+  color: #2E669A;
+  background-color: #d0e4eb;
+  border-radius: 5px;
+  height: 55px;
+  text-transform: uppercase;
+  border-bottom: 2px #2E669A solid;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
+  font-size: 1.6em;
+  width: 90%;
 }
 
 .header {
@@ -258,21 +280,19 @@ form .page .btns button.next {
   width: 90%;
   justify-content: space-between;
   margin: 50px auto;
+  /*
+  background-color: #c4d4e2; */
 }
 
-.header__text h1 {
-  margin: 80px auto;
-  font-size: 1.4em;
-  color: #2E669A;
-  background-color: #ECEFF0;
-  border-radius: 15px;
-  text-transform: uppercase;
-  border-bottom: 2px #2E669A solid;
-  text-align: center;
-  width: 60%;
+.header__text img {
+  width: 380px;
+  height: 330px;
+  margin: 40px auto;
+  border-radius: 30px;
+  box-shadow: #76acdf;
 }
 .header__text ul {
-  margin: 60px auto auto 100px;
+  margin: 20px auto auto 100px;
   text-align: left;
 }
 .header__text ul li {
@@ -300,7 +320,7 @@ form .page .btns button.next {
   border-radius: 30px;
   border: 1px #2E669A solid;
   overflow: hidden;
-  height: 600px;
+  height: 700px;
   text-align: center;
 }
 .main__box h3 {
@@ -332,6 +352,8 @@ form .page .btns button.next {
 .main__box li {
   margin: 5px auto;
   display: inline;
+  font-size: 1em;
+  font-weight: 500;
 }
 .main__box i {
   margin: auto 5px;
@@ -449,9 +471,8 @@ form .page .btns button.next {
 }
 .slider__section {
   width: 250px;
-  height: 300px;
+  height: 350px;
   border-radius: 15px;
-  border: 1x blue solid;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -464,17 +485,20 @@ form .page .btns button.next {
 .slider__section h3 {
   color: black;
   width: 80%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 10px auto;
   border-bottom: 5px black solid;
 }
 .slider__section p {
-  margin: 10px auto;
-  width: 90%;
+  text-align: left;
+  width: 80%;
+  margin: auto;
 }
 .slider__section i {
   color: black;
   font-size: 3.5em;
+  text-align: center;
+  margin: auto auto 5px auto;
 }
 
 .content {
@@ -529,6 +553,40 @@ form .page .btns button.next {
   color: black;
 }
 
+.mentions-container {
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+.mentions-container .mentions-title {
+  font-size: 1.2em;
+  margin: 10px auto;
+}
+.mentions-container .mentions-title .mentions-text {
+  text-align: left;
+  margin: auto 0;
+  width: 80%;
+}
+
+/*
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+body{
+  .container{
+    .header{
+      .formulaire{
+        min-height: auto;
+        height: auto;
+        overflow-y: hidden;
+
+        .container-form{
+          min-height: auto;
+          overflow: hidden;
+          height: auto;
+        }
+      }
+    }
+  }
+}}*/
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   body {
     width: 100%;
@@ -569,6 +627,7 @@ form .page .btns button.next {
   }
   body .container .main__box {
     margin: auto 10px auto 10px;
+    height: 700px;
   }
   body .container .testimonies__boxes section {
     width: 310px;
@@ -578,6 +637,9 @@ form .page .btns button.next {
   body {
     width: 100%;
     margin: auto;
+  }
+  body .container h1 {
+    height: 80px;
   }
   body .container header {
     flex-direction: column-reverse;
@@ -591,21 +653,23 @@ form .page .btns button.next {
     min-height: auto;
   }
   body .container header__text {
-    margin: 10px auto;
+    margin: 0 auto;
   }
-  body .container header__text h1 {
+  body .container header__text ul {
+    margin: 0 auto;
+  }
+  body .container header__text ul li {
     margin: 10px auto;
-    width: 90%;
   }
   body .container .slider {
-    flex-direction: row;
-    height: fit-content;
+    flex-direction: column;
+    height: 1150px;
     text-align: center;
     margin: 10px auto 20px auto;
   }
   body .container .slider__section {
-    width: 180px;
-    margin: 10px 5px auto 5px;
+    width: 300px;
+    margin: 10px auto;
     height: 350px;
   }
   body .container .slider__section p {
@@ -621,9 +685,12 @@ form .page .btns button.next {
   }
   body .container .content img {
     margin: 50px auto;
+    width: 500px;
+    height: 350px;
   }
   body .container .content__text {
     margin: auto;
+    width: 500px;
   }
   body .container .main {
     flex-direction: column;
@@ -632,20 +699,7 @@ form .page .btns button.next {
     width: 80%;
     margin: 20px auto;
   }
-  body .container .main__box p {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-  }
-  body .container .main__box p ul {
-    margin-left: 0;
-    text-align: left;
-  }
-  body .container .main__box p ul li {
-    text-align: left;
-    margin-left: 0;
-  }
-  body .container .main__box img {
+  body .container .main img {
     width: 400px;
   }
   body .container .testimonies {
@@ -663,6 +717,15 @@ form .page .btns button.next {
   body {
     width: 100%;
   }
+  body h1 {
+    width: 90%;
+    height: 40px;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin: auto;
+  }
   body .container {
     width: 100%;
   }
@@ -673,18 +736,34 @@ form .page .btns button.next {
   body .container .header .formulaire {
     height: auto;
     min-height: auto;
-    width: 330px;
+    width: 100%;
+    margin: auto;
   }
   body .container .header .formulaire .container-form {
     height: auto;
     min-height: auto;
+    width: 95%;
+    margin: auto;
   }
   body .container .header__text {
     margin: 10px auto;
   }
+  body .container .header__text img {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+  }
+  body .container .header__text ul {
+    width: 90%;
+    margin: 30px auto;
+  }
+  body .container .header__text li {
+    margin: 5px auto;
+  }
   body .container .slider {
     flex-direction: column;
-    height: 800px;
+    height: 1010px;
+    margin: 10px auto;
   }
   body .container .slider__section {
     width: 300px;
@@ -692,28 +771,36 @@ form .page .btns button.next {
     margin: 15px auto;
   }
   body .container .content {
-    height: 860px;
+    height: 840px;
     flex-direction: column-reverse;
-    margin: auto;
+    margin: 50px auto;
+    width: 100%;
   }
   body .container .content img {
     margin: 30px auto;
-    width: 330px;
+    width: 300px;
+    height: 250px;
   }
   body .container .content__text {
     margin: 15px auto;
-    width: 330px;
+    width: 300px;
+    height: auto;
   }
   body .container .main {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   body .container .main__box {
     margin: 20px auto;
+    width: 90%;
+  }
+  body .container .main__box h3 {
+    width: 80%;
+    margin: auto;
   }
   body .container .testimonies h3 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   body .container .testimonies__boxes {
     flex-direction: column;
@@ -724,6 +811,10 @@ form .page .btns button.next {
   }
   body .container .footer {
     flex-direction: column;
+    text-align: center;
+  }
+  body .container .footer__disclaimer {
+    margin: auto;
   }
 }
 

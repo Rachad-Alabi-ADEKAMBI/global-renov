@@ -6,12 +6,23 @@ ul{
   margin: auto 30px;
   width: 80%;
 }
+ 
 ul li{
   list-style: none;
-  
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+ol li{
+  font-size: 1.1em;
+}
+
+p{
+  font-size: 1.2em;
+  font-weight: 500;
 }
 h2{
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-top: 10px;
   width: 100%;
 }
@@ -28,7 +39,7 @@ body{
   text-align: center;
   justify-content: center;/*
   background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);*/
-  
+
 }
 
 .container{
@@ -36,6 +47,8 @@ body{
   flex-direction: column;
   width: 90%;
   margin: auto;
+  
+  background: rgba(138, 183, 212, 0.2);
 }
 
 .formulaire{
@@ -45,10 +58,10 @@ body{
   min-height: 100vh;
   overflow: hidden;
   box-shadow: 0px 0px 20px 20px #00000020;
-      background-color: aliceblue;
+  background-color: rgba(255, 255, 255, .2);
       border-radius: 15px;
-      margin: 50px auto;
-}
+      margin: 10px auto;
+
 
 ::selection{
   color: #fff;
@@ -90,11 +103,17 @@ body{
   margin: 45px 0;
   display: flex;
   position: relative;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
 }
 form .page .field .label{
   position: absolute;
   top: -30px;
+  font-size: 18px;
   font-weight: 500;
+  text-align: left;
+  margin: auto 0;
 }
 form .page .field input{
   height: 100%;
@@ -103,6 +122,7 @@ form .page .field input{
   border-radius: 5px;
   padding-left: 15px;
   font-size: 18px;
+  font-weight: 500;
 }
 form .page .field select{
   width: 100%;
@@ -226,6 +246,22 @@ form .page .btns button.next{
 .progress-bar .step .check.active{
   display: block;
   color: #fff;
+}}
+
+h1{
+  margin: 50px auto 0 auto;
+  font-size: 1.4em;
+  color: #2E669A;
+  background-color: #d0e4eb;
+  border-radius: 5px;
+  height: 55px;
+  text-transform: uppercase;
+  border-bottom: 2px #2E669A solid;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
+  font-size: 1.6em;;
+  width: 90%;
 }
 
 .header{
@@ -233,29 +269,14 @@ form .page .btns button.next{
   flex-direction: row;
   width: 90%;
   justify-content: space-between;
-  margin: 50px auto;
-  background-color: rgb(215, 229, 230);
-
-  /*
-  background-image: url("assets/images/img2.jpeg");
-  */
+  margin: 50px auto;/*
+  background-color: #c4d4e2; */ 
 } 
 
 .header__text{
-  h1{
-    margin: 80px auto;
-    font-size: 1.4em;
-    color: #2E669A;
-               background-color: #ECEFF0;
-               border-radius: 15px;
-               text-transform: uppercase;
-                border-bottom: 2px #2E669A solid;
-                text-align: center;
-                width: 60%;
-  }
-
+ 
   ul{
-    margin: 60px auto auto 100px ;
+    margin: 200px auto auto 100px ;
     text-align: left;
 
 li{
@@ -287,7 +308,7 @@ p{
       border-radius: 30px;
       border: 1px #2E669A solid;
       overflow: hidden; 
-      height: 600px;
+      height: 680px;
       text-align: center; 
               
           h3{
@@ -323,6 +344,8 @@ p{
           li{
               margin: 5px auto;
               display: inline;
+              font-size: 1em;
+              font-weight: 500;
           }
 
           i{
@@ -408,7 +431,6 @@ p{
           font-weight: bold;
       }
 
-
       ol{
           margin: 10px auto auto 50px;
 
@@ -458,10 +480,10 @@ p{
   border-bottom: 1px black solid;
 
       &__section{
+       
           width: 250px;
-          height: 300px;
+          height: 350px;
           border-radius: 15px;
-          border: 1x blue solid;
           padding-top: 10px;
           display: flex;
           flex-direction: column;
@@ -474,19 +496,22 @@ p{
           h3{
               color: black;
               width: 80%;
-              font-size: 1.2em;
+              font-size: 1.3em;
               margin: 10px auto;
               border-bottom: 5px black solid;
           }
           
           p{
-              margin: 10px auto;
-              width: 90%;
+            text-align: left;
+              width: 80%;
+              margin: auto;
           }
 
           i {
               color: black;
               font-size: 3.5em;
+              text-align: center;
+              margin: auto auto 5px auto;
           }
       }
 }
@@ -550,6 +575,25 @@ p{
           }
         }
 }
+/*
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+body{
+  .container{
+    .header{
+      .formulaire{
+        min-height: auto;
+        height: auto;
+        overflow-y: hidden;
+
+        .container-form{
+          min-height: auto;
+          overflow: hidden;
+          height: auto;
+        }
+      }
+    }
+  }
+}}*/
 
 @media screen and (min-width: 1024px) and (max-width: 1279px){
   body{
@@ -577,14 +621,15 @@ p{
           }
 
           .formulaire{
-          width: 400px;
-          margin:30px  auto;
-          height: 80vh;
-          min-height: 80vh;
-  
+            flex: 1;
+            height: auto;
+            min-height: auto;
+            overflow: hidden;
+
             .container-form{
-              width: 330px;
-              margin: auto;
+              height: auto;
+              min-height: auto;
+              overflow: hidden;
             }
           }
         }
@@ -598,19 +643,218 @@ p{
         .main{
           &__box{
             margin: auto 10px auto 10px;
+            height: 700px;
           }
         }
 
         .testimonies{
-          
+          &__boxes{
+            section{
+              width: 310px;
+            }
+          }
         }
     }
   }
 }
-/*
 
-@media screen and (min-width: 1024px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
   body{
-     width: 100%;
-  margin: auto;
-}}*/
+      width: 100%;
+      margin: auto;
+
+     .container{  
+       h1{
+         height: 80px;
+       }  
+        header{
+          flex-direction: column-reverse;
+
+            .formulaire{
+                height: auto;
+                min-height: auto;
+
+                  .container-form{
+                      height: auto;
+                      min-height: auto;
+                  }
+              }
+
+            &__text{
+              margin: 0 auto;
+
+              ul{
+                
+              }
+            }
+         }
+
+        .slider{
+          flex-direction: row;
+          height: fit-content;
+          text-align: center;
+          margin: 10px auto 20px auto;
+
+          &__section{
+            width: 180px;
+            margin: 10px 5px auto 5px;
+            height: 350px;
+
+            p{
+              text-align: left;
+              margin: auto;
+            }
+
+            i{
+              margin: auto auto 5px auto;
+            }
+          }
+
+        }
+
+        .content{
+          flex-direction: column-reverse;
+          height: 900px;
+
+          img{
+            margin: 50px auto;
+          }
+
+          &__text{
+            margin: auto;
+          }
+        }
+
+        .main{
+          flex-direction: column;
+
+          &__box{
+            width: 80%;
+            margin: 20px auto;
+
+            p {
+              width: 80%;
+              margin: auto;
+              text-align: left;
+
+              ul{
+                margin-left: 0;
+                text-align: left;
+
+                li{
+                  text-align: left;
+                  margin-left: 0;
+                }
+
+              }
+
+            }
+
+            img{
+              width: 400px;
+            }
+          }
+        }
+
+        .testimonies{
+          flex-direction: column;
+
+          &__boxes{
+            flex-direction: column;
+            margin: 20px auto;
+            
+            section{
+              margin: 15px auto;
+            }
+          }
+        }
+
+      }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px){
+  body{
+    width: 100%;
+
+    .container{
+      width: 100%;
+     
+      .header{
+        flex-direction: column-reverse;
+        width: 100%;
+
+          .formulaire{
+              height: auto;
+              min-height: auto;
+              width: 330px;
+
+                .container-form{
+                    height: auto;
+                    min-height: auto;
+                }
+          }
+
+          &__text{
+            margin: 10px auto;
+          }
+      }
+
+      .slider{
+        flex-direction: column;
+        height: 800px;
+
+        &__section{
+          width: 300px;
+          height: auto;
+          margin: 15px auto;
+        }
+      }
+
+      .content{
+        height: 860px;
+        flex-direction: column-reverse;
+        margin: auto;
+
+        img{
+          margin: 30px auto;
+          width: 330px;
+        }
+
+        &__text{
+          margin: 15px auto;
+          width: 330px;
+        }
+      }
+
+      .main{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+
+        &__box{
+          margin: 20px auto;
+        }
+      }
+
+      .testimonies{
+        h3{
+          font-size: 1em;
+        }
+
+        &__boxes{
+          flex-direction: column;
+
+          section{
+            width: 90%;
+            margin: 15px auto;
+          }
+        }
+      }
+      
+      .footer{
+        flex-direction: column;
+      }
+    }
+  }
+}
