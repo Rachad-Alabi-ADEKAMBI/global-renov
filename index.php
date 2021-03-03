@@ -9,30 +9,38 @@
 </head>
 
 <body>
-    <div class="container">
+<!--container-->
+   
+        <a href="#" class="logo">
+        GLOBAL RENOV</a>
         <h1 class="title">
-            Etes vous bien interesse par un 
+            Etes vous intéressé par un 
             projet de pompe a chaleur ?   
         </h1> 
            
+        <!--header-->
         <header class="header">
-            <div class="header__text">
-                <img class="header__text__image" src="./assets/images/img1.jpeg" alt="image de 
-                pompe à chaleur"> 
-                <ul>
+            <div class="header__up">
+                <div class="header__up__text">
+                    <img class="header__up__text__image" src="./assets/images/img1.jpeg" alt="image de 
+                        pompe à chaleur"> 
+
+                    <ul>
                     <li><i class="fas fa-check-circle"></i><p>Plus de 70% d’économies sur vos factures d’électricité</p></li>
                     <li><i class="fas fa-check-circle"></i><p>Profitez des primes d’états estimées à 80 % du prix d’installation</p></li>
                     <li><i class="fas fa-check-circle"></i><p> Bénéficiez d’expert RGE pour l’installation</p></li>
                     <li><i class="fas fa-check-circle"></i> <p>Aucune démarche administrative</p></li>
                     <li><i class="fas fa-check-circle"></i> <p>Adoptez une solution d’énergie propre et renouvelable</p></li>
                     <li><i class="fas fa-check-circle"></i><p> Accompagnement tout au long des procédures</p></li>
-                </ul> <br> 
-            </div>     
+                    </ul> <br> 
 
-            <div class="formulaire" id="formulaire">                  
-                <div class="container-form">
-                    <h2 class="">Formulaire</h2>
-      
+                </div>     
+
+                <!--formulaire-->
+                <div class="formulaire" id="formulaire">                  
+                    <div class="container-form">
+                    <h2 class="form-title">Formulaire d'éligibilité</h2>
+
                     <div class="progress-bar">
                         <div class="step"><p></p>
                             <div class="bullet"><span>1</span></div>
@@ -55,21 +63,21 @@
                         </div>
                     </div>
 
-              <div class="form-outer">
-              <form action="form.php" method="POST">
-                  <div class="page slide-page">
-                <h3>Vérifiez votre éligibilité</h3>
+                    <div class="form-outer">
+                <form action="" method="">
+                        <div class="page slide-page">
+                    <h3>Vérifiez votre éligibilité</h3>
                       
                   <div class="field">
                       <label for="titre">Vous êtes:  
-                          <select name="titre" id="">
-                              <option value="propriétaire">Propriétaire</option>
+                          <select name="titre" id="titre" class="titre">
+                              <option value="proprietaire">Propriétaire</option>
                               <option value="locataire">Locataire</option>
                           </select> 
                         </label>
                   </div><br>
       
-                  <div class="field btn">
+                  <div class="field btns">
                     <button class="firstNext next">Suivant</button>
                   </div>
                   </div>
@@ -77,7 +85,7 @@
                   <div class="page">
                   <h3>Informations sur l'habitation</h3>
                   <div class="field">
-                      <label for="type">Type d'habitation
+                      <label for="habitation">Type d'habitation
                           <select name="habitation" id="">
                               <option value="maison">Maison</option>
                               <option value="appartement">Appartement</option>
@@ -87,7 +95,7 @@
                   </div>
       
                   <div class="field">
-                      <label for="type">Type de chauffage
+                      <label for="chauffage">Type de chauffage
                           <select name="chauffage" id="chauffage">
                               <option value="maison">Fioul</option>
                               <option value="appartement">Gaz</option>
@@ -104,7 +112,7 @@
                   <div class="page">
                   <h3>Informations personnelles</h3>
                   <div class="field">
-                      <label for="prénom"><input type="text" placeholder="Prénom"></label> 
+                      <label for="prenom"><input type="text" placeholder="Prénom"></label> 
                        <label for="nom"><input type="text" placeholder="Nom"></label>
                   </div>
       
@@ -150,37 +158,51 @@
                     <button class="submit">SOUMETTRE</button>
                   </div>
                   </div>
-              </form>
-              </div>
-         
+
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div class="header__bottom">
+                <h2 class="header__bottom__title">Nos QUALIFICATIONS</h2>
+
+                <div class="header__bottom__list">
+                    <img src="assets/images/logo1.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo2.jpg" class="logo" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo3.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo4.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
                 </div>
             </div>
         </header>
-
+                    
+        <div class="container">
+        <!--slider des informations utiles-->
         <div class="slider">
             <div class="slider__section">
                 <h3>AIDES FINANCIÈRES 2020</h3>
                 <p> Des aides allant <p class="important"> jusqu’à 10 500 € </p>
                 <p>grâce à Maprimerenov’ et aux certificats 
                     d’économie d’énergies (CEE).</p>
-                    <i class="fas fa-hands-helping"></i>  
+                    <img src="./assets/images/aide3.png" alt="pompe à chaleur"> 
            </div>
            
            <div class="slider__section">          
                 <h3> ÉCONOMIES D’ÉNERGIE</h3>
                 <p> Réalisez <p class="important">75% d’économies </p> <p> facture 
                     de gaz, fioul et éléctricité.</p>
-                <i class="fas fa-euro-sign"></i>
+                    <img src="./assets/images/euro.png" class="eclair" alt="pompe à chaleur"> 
             </div>
 
             <div class="slider__section">          
                 <h3>CLASSE ÉNERGÉTIQUE A+</h3>
                 <p>En installant une pompe à chaleur, votre maison
                      gagne en classe énergétique et <p class="important">prend de la valeur.</p></p>
-                <i class="fas fa-bolt"></i>
+                     <img src="./assets/images/eclair6.jpg" alt="pompe à chaleur"> 
             </div>
         </div>
-
+        <!--content-->
         <div class="content">    
             <div class="content__text">        
                 <h2 class="content__text__title">Étapes</h2> 
@@ -205,7 +227,7 @@
             <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur">
         </div>
 
-
+        <!--main-->
         <main class="main">
             <div class="main__box">
                     <h3> Pourquoi installer ue pompe à chaleur ?</h3>
@@ -255,7 +277,8 @@
                     <img src="./assets/images/img3.jpg">
             </div>
         </main>
-
+        
+        <!--testimonies-->
         <div class="testimonies">
             <h3 class="content__testimonies__title">
                 94% de nos clients
@@ -316,11 +339,12 @@
                 </section>
             </div>
         </div>
-
+        
+        <!--footer-->
         <footer class="footer">
-            <p class="footer__text">
+            <a href="#" class="footer__text">
                 Global Renov ©️2020  Tous droits réservés
-            </p>
+            </a>
 
             <div class="footer__disclaimer">
                  <a href="mentions.php">Mentions légales</a>

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 .logo {
-  color: #1b1b2c;
+  color: #2222e0;
   background-color: #bbc8e6;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px #2b3641;
@@ -24,10 +24,6 @@ h1 {
   margin: 5px auto;
 }
 
-h2 {
-  color: #2E669A;
-}
-
 ul {
   display: flex;
   flex-direction: column;
@@ -41,6 +37,7 @@ ul li {
   font-weight: 400;
   align-items: center;
   justify-content: center;
+  color: #d43f8d;
 }
 
 ol li {
@@ -313,65 +310,36 @@ h1 {
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 90%;
   justify-content: space-between;
   margin: 50px auto;
+  /*
+  background-color: #c4d4e2; */
 }
 
-.header__up {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header__up .header__up__text img {
+.header__text img {
   width: 380px;
   height: 330px;
   margin: 40px auto;
   border-radius: 30px;
   box-shadow: #76acdf;
 }
-.header__up .header__up__text ul {
+.header__text ul {
   margin: 20px auto auto 100px;
   text-align: left;
 }
-.header__up .header__up__text ul li {
+.header__text ul li {
   margin: 5px auto auto 0;
   display: flex;
   flex-direction: row;
 }
-.header__up .header__up__text ul li i {
+.header__text ul li i {
   color: green;
   font-size: 1.3em;
 }
-.header__up .header__up__text p {
+.header__text p {
   margin: auto 10px;
-}
-
-.header__bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  margin: 20px auto;
-}
-
-.header__bottom__title {
-  font-size: 2em;
-  margin: 40px auto;
-}
-
-.header__bottom__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin: 10px auto 10px auto;
-}
-.header__bottom__list .logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
 }
 
 /*slider*/
