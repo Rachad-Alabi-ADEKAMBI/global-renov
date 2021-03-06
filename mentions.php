@@ -8,10 +8,15 @@
 </head>
 
 <body>
-    <div class="mentions-container">
-        <div class="header">
-            <h1 class="mentions-title">GLOBAL RENOV -MENTIONS LEGALES</h1><br>
-        </div>
+    <div class="top">
+        <a href="index.php" class="logo">
+        GLOBAL RENOV</a> 
+    </div>
+
+    <div class="mentions-container container">
+        <h2>
+            MENTIONS LEGALES
+        </h2>
 
         <p class="mentions-text">
             Statut du propriétaire : Société <br>
@@ -22,7 +27,7 @@ Le responsable de la publication est une personne morale. <br>
 Hébergeur <br>
 
 OVH FRANCE SAS <br>
-Tél. :  <br>
+Tél. :  09 72 10 10 10<br>
 Email : support@ovh.com <br>
 Site internet : www.ovh.com <br>
 
@@ -37,18 +42,33 @@ réglementaires de tous pays et des conventions internationales,
 toute représentation et/ou reproduction, intégrale ou partielle, 
 de l’un quelconque des éléments mentionnés ci-dessus, faite sans 
 le consentement préalable et écrit de contact@globalrenov.fr
- est interdite.<br> <br> <br>
+ est interdite. </p><br> <br> <br>
+       
+ </div>
+ <footer class="footer">
+            <a href="#" class="footer__text">
+                Global Renov ©️ 2020  <br> Tous droits réservés
+            </a>
+
+            <div class="footer__bouton">
+                    <p> Déjà des milliers de Français satisfaits grâce au travail de
+                    nos experts RGE. Remplissez ce formulaire ça ne vous
+                    prendra que quelques secondes.</p> <br>
 
 
-        </p>
-        <footer class="footer">
-            <p class="footer__text">
-                Global Renov ©️2020  Tous droits réservés
-            </p>
+                <a href="#formulaire" class="footer-btn-link">
+                    <button class="footer-btn">
+                        En savoir plus
+                    </button>
+                </a>
      
+            </div>
+
+
             <div class="footer__disclaimer">
-                 <a href="#">Mentions légales</a>
+                 <a href="mentions.php">Mentions légales</a>
             </div>
         </footer>
-    </div>
+        </div>
+   
     </body>

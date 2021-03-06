@@ -4,24 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/sass/css/style.css">
+    <link rel="stylesheet" href="assets/sass/css/style-form.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>GLOBAL RENOV - ACCUEIL</title>
 </head>
 
 <body>
-<!--container-->
-   
+<!--container-->  
+    <div class="top">
         <a href="#" class="logo">
         GLOBAL RENOV</a>
+
         <h1 class="title">
             Etes vous intéressé par un 
             projet de pompe a chaleur ?   
         </h1> 
-           
+    </div>   
+
         <!--header-->
         <header class="header">
-            <div class="header__up">
-                <div class="header__up__text">
+            <div class="header__up" id="header__up">
+                <div class="header__up__text" >
                     <img class="header__up__text__image" src="./assets/images/img1.jpeg" alt="image de 
                         pompe à chaleur"> 
 
@@ -32,7 +35,7 @@
                     <li><i class="fas fa-check-circle"></i> <p>Aucune démarche administrative</p></li>
                     <li><i class="fas fa-check-circle"></i> <p>Adoptez une solution d’énergie propre et renouvelable</p></li>
                     <li><i class="fas fa-check-circle"></i><p> Accompagnement tout au long des procédures</p></li>
-                    </ul> <br> 
+                    </ul>
 
                 </div>     
 
@@ -64,7 +67,7 @@
                     </div>
 
                     <div class="form-outer">
-                <form action="" method="">
+                    <form action="" method="">
                         <div class="page slide-page">
                     <h3>Vérifiez votre éligibilité</h3>
                       
@@ -161,24 +164,26 @@
 
                     </form>
                 </div>
+                
             </div>
             </div>
         </div>
 
             <div class="header__bottom">
-                <h2 class="header__bottom__title">Nos QUALIFICATIONS</h2>
+                <h2 class="header__bottom__title">NOS QUALIFICATIONS</h2>
 
                 <div class="header__bottom__list">
-                    <img src="assets/images/logo1.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo2.jpg" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo3.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo4.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo1.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo2.jpg" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo3.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo4.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
                 </div>
             </div>
         </header>
                     
         <div class="container">
         <!--slider des informations utiles-->
+
         <div class="slider">
             <div class="slider__section">
                 <h3>AIDES FINANCIÈRES 2020</h3>
@@ -202,6 +207,7 @@
                      <img src="./assets/images/eclair6.jpg" alt="pompe à chaleur"> 
             </div>
         </div>
+        
         <!--content-->
         <div class="content">    
             <div class="content__text">        
@@ -230,7 +236,7 @@
         <!--main-->
         <main class="main">
             <div class="main__box">
-                    <h3> Pourquoi installer ue pompe à chaleur ?</h3>
+                    <h3> Pourquoi installer une pompe à chaleur ?</h3>
                     <p>
                         Le principe d’une pompe à chaleur est de récupérer les calories présentes
                     dans l’air extérieur ou encore dans le sol pour la transformer en air chaud 
@@ -294,10 +300,10 @@
                     
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
                        
                     </ul>
                     <p class="comment">Muriel Ribeiro</p>
@@ -309,12 +315,13 @@
                     <p>Je recommande. Société sérieuse et à l’écoute. Intervention très propre, 
                         merci encore ma pompe à chaleur fonctionne à merveille.
                     </p>
+
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
                         
                     </ul>
                     <p class="comment">Michel Dumas </p> 
@@ -328,10 +335,10 @@
                     </p>
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>                         
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>                         
                     </ul>
 
                     <p class="comment">Dominique Freiss</p>
@@ -343,8 +350,23 @@
         <!--footer-->
         <footer class="footer">
             <a href="#" class="footer__text">
-                Global Renov ©️2020  Tous droits réservés
+                Global Renov ©️ 2020  <br> Tous droits réservés
             </a>
+
+            <div class="footer__bouton">
+                    <p> Déjà des milliers de Français satisfaits grâce au travail de
+                    nos experts RGE. Remplissez ce formulaire ça ne vous
+                    prendra que quelques secondes.</p> <br>
+
+
+                <a href="#formulaire" class="footer-btn-link">
+                    <button class="footer-btn">
+                        En savoir plus
+                    </button>
+                </a>
+     
+            </div>
+
 
             <div class="footer__disclaimer">
                  <a href="mentions.php">Mentions légales</a>

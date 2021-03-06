@@ -1,73 +1,47 @@
 <?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=leads;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
 
-//vchecking values
+/*connection à la base de données*/
+
+
+
 if (isset($_POST["submit"])) {
-    if (isset($_POST["nom"])){
-        if (isset($_POST["prenom"])){
-            if (isset($_POST["email"])){
-                if (isset($_POST["telephone"])){
-                    if (isset($_POST["habitation"])){
-                        if (isset($_POST["chauffage"])){
-                            if (isset($_POST["chauffage"])){
-                                echo 'ok';
-                            }
-                            else{
-                                echo 'no';
-                            }
-                        }
-                        else{
-                            echo'Veuillez choisir le type de chauffage <br>'; 
-                        }
 
-                    }
-                    else{
-                        echo'Veuillez choisir le type d\'\habitation <br>';
-                    }
-                }
-                else{
-                    echo'Veuillez entrer votre numero de telephone <br>';
-                }
-            }
-            else{
-                echo'Veuillez entrer votre email <br>';
-            }
-        }
-        else{
-            echo'Veuillez entrer votre prenom <br>'; 
-        }
 
+
+/*recuperation des information de ton formulaire et j' ai aussi modifier ton formulaire  j'ai eu a ajoute des name au inpute pour la recuperation des donnée */
+    $serveur = "localhost";
+    $login = "ola";
+    $pas = "root";
+        $Nom = $_POST["nom"];
+        $Prenom = $_POST["prenom"];
+        $habitation = $_POST["habitation"];
+        $telephone = $_POST["telephone"];
+        $region = $_POST["region"];
+        $ville = $_POST["code_postal"];
+        $code_postal = $_POST["ville"];
+        $email = $_POST["email"];
+    // une methode de connection a la base de donnée
+    $connexion = new PDO("mysql:host=$serveur;dbname=rachad", $login, $pas);
+    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+//la requete d'insertion dans la base j'ai cree une nouvelle table
+    $req = $connexion->prepare("INSERT INTO form ( nom,prenom, email,telephone, habitation,region,ville ,code_postal) VALUES (:nom,:prenom,:email,:telephone,:habitation,:region,:ville,:code_postal)");
+// recuperation et insertion dans les parametre
+    $req->bindParam(':nom', $Nom);
+    $req->bindParam(':prenom', $Prenom);
+    $req->bindParam(':email', $email);
+    $req->bindParam(':telephone', $telephone);
+    $req->bindParam(':habitation', $habitation);
+    $req->bindParam(':region', $region);
+    $req->bindParam(':ville', $code_postal);
+    $req->bindParam(':code_postal', $code_postal);
+
+    $req->execute();
+
+
+    /* cette methode est une de mes creations */
     }
-    else{
-        echo'Veuillez entrer votre nom <br>'; 
-    }
-}
 
-/*
-$req = $bdd->prepare
-('INSERT INTO informations-leads(id, nom, prenom, email, telephone, habitation, chauffage, region,
-                ville, code_postal, date_inscription) VALUES(:id, :nom, :prenom, :email, :telephone, :habitation, :chauffage, :region,
-                :code_postal, :NOW())');
-$req->execute(array(
-	'nom' => $nom,
-    'prenom' => $prenom,
-	'email' => $email,
-	'telephone' => $telephone,
-	'habitation' => $habitation,
-	'chauffage' => $chauffage,
-    'region' => $region,
-    'ville' => $ville,
-    'code_postal' => $code_postal
-	));
 
-    //redirection
-    header('Location: merci.php');;
+
 ?>
-*/
