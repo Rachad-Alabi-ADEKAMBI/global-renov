@@ -19,7 +19,7 @@ nextBtnFirst.addEventListener("click", function(event){
   event.preventDefault();
   let titre=document.getElementById("titre").value;
   if (titre != "proprietaire"){
-    alert("Désolé mais vous devez etre propriétaire");
+    alert("Désolé mais vous devez etre propriétaire pour profiter de ce programme");
   }
   else{
   slidePage.style.marginLeft = "-25%";
@@ -34,16 +34,26 @@ nextBtnFirst.addEventListener("click", function(event){
 //deuxieme bouton SUIVANT
 nextBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
+
+  let chauffage = document.getElementById("chauffage").value;
+  if (chauffage == "electrique"){
+    alert("Désolé mais ce type de chauffage ne donne pas accès au programme")
+  }
+
+  else{
+    slidePage.style.marginLeft = "-50%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
+  }
 });
 
 //troisieme bouton suivant
 nextBtnThird.addEventListener("click", function(event){
   event.preventDefault();
+  /*
+  let prenom = document.getElement("prenom")*/
   slidePage.style.marginLeft = "-75%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");

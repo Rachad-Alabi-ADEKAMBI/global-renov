@@ -89,7 +89,7 @@
                   <h3>Informations sur l'habitation</h3>
                   <div class="field">
                       <label for="habitation">Type d'habitation
-                          <select name="habitation" id="">
+                          <select name="habitation" id="habitation">
                               <option value="maison">Maison</option>
                               <option value="appartement">Appartement</option>
                               <option value="autre-type">Autre</option>
@@ -102,7 +102,7 @@
                           <select name="chauffage" id="chauffage">
                               <option value="maison">Fioul</option>
                               <option value="appartement">Gaz</option>
-                              <option value="autre-type">Autre</option>
+                              <option value="electrique">Electrique</option>
                           </select>
                       </label>
                   </div> <br>
@@ -183,7 +183,6 @@
                     
         <div class="container">
         <!--slider des informations utiles-->
-
         <div class="slider">
             <div class="slider__section">
                 <h3>AIDES FINANCIÈRES 2020</h3>
@@ -211,7 +210,7 @@
         <!--content-->
         <div class="content">    
             <div class="content__text">        
-                <h2 class="content__text__title">Étapes</h2> 
+                <h2 class="content__text__title">ETAPES</h2> 
                 
                 <h3> Quelles sont les étapes à suivre pour remplacer sa chaudière
                     par une pompe à chaleur ? </h3>
