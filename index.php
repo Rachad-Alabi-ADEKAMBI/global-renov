@@ -67,18 +67,18 @@
                     </div>
 
                     <div class="form-outer">
-                    <form action="" method="">
+                    <form action="form.php" method="POST">
                         <div class="page slide-page">
-                    <h3>Vérifiez votre éligibilité</h3>
+                            <h3>Vérifiez votre éligibilité</h3>
                       
-                  <div class="field">
-                      <label for="titre">Vous êtes:  
-                          <select name="titre" id="titre" class="titre">
-                              <option value="proprietaire">Propriétaire</option>
-                              <option value="locataire">Locataire</option>
-                          </select> 
-                        </label>
-                  </div><br>
+                        <div class="field">
+                            <label for="titre">Vous êtes:  
+                                <select name="titre" id="titre" class="titre">
+                                    <option value="proprietaire">Propriétaire</option>
+                                    <option value="locataire">Locataire</option>
+                                </select> 
+                                </label>
+                        </div><br>
       
                   <div class="field btns">
                     <button class="firstNext next">Suivant</button>
@@ -92,7 +92,7 @@
                           <select name="habitation" id="habitation">
                               <option value="maison">Maison</option>
                               <option value="appartement">Appartement</option>
-                              <option value="autre-type">Autre</option>
+                              <option value="autre">Autre</option>
                           </select>
                       </label>
                   </div>
@@ -100,8 +100,8 @@
                   <div class="field">
                       <label for="chauffage">Type de chauffage
                           <select name="chauffage" id="chauffage">
-                              <option value="maison">Fioul</option>
-                              <option value="appartement">Gaz</option>
+                              <option value="fioul">Fioul</option>
+                              <option value="gaz">Gaz</option>
                               <option value="electrique">Electrique</option>
                           </select>
                       </label>
@@ -115,20 +115,18 @@
                   <div class="page">
                   <h3>Informations personnelles</h3>
                   <div class="field">
-                      <label for="prenom"><input type="text" placeholder="Prénom"></label> 
-                       <label for="nom"><input type="text" placeholder="Nom"></label>
+                      <label for="prenom"></label><input type="text" placeholder="Prénom" id="prenom" name="prenom" required>
+                       <label for="nom"></label><input type="text" placeholder="Nom" id="nom" name="nom" required>
+                  </div>    
+      
+                  <div class="field">
+                      <label for="telephone"></label>
+                          <input type="number" placeholder="telephone" id="telephone" name="telephone">
                   </div>
       
                   <div class="field">
-                      <label for="telephone">
-                          <input type="number" placeholder="telephone">
-                      </label>
-                  </div>
-      
-                  <div class="field">
-                      <label for="email" class="email">
-                         <input type="text" class="e" placeholder="Email">
-                      </label>
+                      <label for="email" class="email"></label>
+                         <input type="text" class="email" placeholder="Email"  id="email" name="email">
                   </div>
                      
                   <div class="field btns">
@@ -139,22 +137,21 @@
               
                   <div class="page">
                     <h3>Informations complémentaires</h3>
+
                   <div class="field">
                       <label for="region" class="region"> </label>
-                          <input type="text" class="" placeholder="Région">  
+                          <input type="text" class="" placeholder="Région" id="region" name="region" required>  
                   </div>
       
                   <div class="field">
-                      <label for="code_postal" class="code_postal">
-                          <input type="code_postal" class="" placeholder="Code postal">
-                      </label>
+                      <label for="code_postal" class="code_postal"></label>
+                          <input type="code_postal" class="" placeholder="Code postal" id="code_postal" name="code_postal" required>        
                   </div>
       
                   <div class="field">
-                      <label for="ville" class="ville">
-                          <input type="text" class="" placeholder="Ville">
-                      </label>
-                      </div>
+                      <label for="ville" class="ville"> </label>
+                          <input type="text" class="" placeholder="Ville" id="ville" name="ville" required>                 
+                </div>
       
                    <div class="field btns">
                     <button class="prev-3 prev">PRECEDENT</button>
@@ -229,7 +226,7 @@
                     </a>
             </div>
 
-            <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur">
+            <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur" class="content__image">
         </div>
 
         <!--main-->
@@ -285,10 +282,10 @@
         
         <!--testimonies-->
         <div class="testimonies">
-            <h3 class="content__testimonies__title">
+            <h2 class="content__testimonies__title">
                 94% de nos clients
                 sont satisfaits
-            </h3>
+            </h2>
             
             <div class="testimonies__boxes">
                 <section>                

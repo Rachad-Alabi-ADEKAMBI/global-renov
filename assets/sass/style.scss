@@ -42,11 +42,12 @@ ol li{
 .comment{
   border-bottom: 2px #2E669A solid ;
   width: auto;
+  margin: 0;
 }
 
 .important{
   color: #2E669A;
-  margin: auto 0;
+  margin: 0
 }
 
 p{
@@ -111,12 +112,15 @@ p{
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
+  background: url("https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
 } 
 
 .header__up{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
 
 .header__up__text{
   img{
@@ -127,7 +131,7 @@ p{
     box-shadow: #76acdf;
   }
   ul{
-    margin: 20px auto auto 100px ;
+    margin: 20px auto;
     text-align: left;
 
 li{
@@ -159,6 +163,7 @@ p{
 .header__bottom__title{
     font-size: 2em;
     margin: 40px auto;
+    border-bottom: 5px #2E669A solid;
 }
 
 .header__bottom__list{
@@ -178,7 +183,8 @@ p{
 /*slider*/
 .slider{
   margin: 0 auto;
-  height: 480px;
+  height: 440px;
+  background: #D6E6EF;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -186,7 +192,8 @@ p{
   width: 80%;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
       &__section{  
           width: 250px;
@@ -229,70 +236,6 @@ p{
       }
 }
 
-/*main*/
-.main{
-  display: flex;
-  flex-direction: row;
-  margin: 20px auto;
-
-  &__box{
-      margin: 0 20px auto 20px;
-      flex: 1;
-      border-radius: 30px;
-      border: 1px #2E669A solid;
-      overflow: hidden; 
-      height: 680px;
-      text-align: center; 
-              
-          h3{
-              color: #2E669A;
-              margin: 10px auto 20px auto;
-              text-transform: uppercase;
-              font-size: 1.1em;
-              border-bottom: 1px #2E669A solid;
-              width: 100%;
-              height: 60px;
-              padding-top: 5px;
-          }
-
-          ul li{
-            font-size: 1.2em;
-          }
-
-          img{
-              width: 380px;
-              height: 280px;
-              border-radius: 30px;
-              bottom: 10px;
-              margin: 40px auto 40px auto;
-          }
-          
-          p{
-              width: 90%;
-              margin: 5px auto;
-              text-align: justify;
-          }
-
-          ul{
-              margin: 10px auto;
-              text-align: left;
-          }
-
-          li{
-              margin: 5px auto;
-              display: inline;
-              font-size: 1em;
-              font-weight: 500;
-          }
-
-          i{
-              margin: auto 5px;
-              color: #2E669A;
-              font-size: 1.1em;
-          }      
-  }
-}
-
 /*content*/
 .content{
   display: flex;
@@ -301,14 +244,13 @@ p{
   width: 80%;
   height: 650px;
   margin: auto;
-  margin: auto;
 
   &__text{
       box-shadow: 0px 0px 20px 20px #00000020;
       background-color: aliceblue;
       border-radius: 15px;
-      width: 450px;
-      height: 450px;
+      width: 500px;
+      height: 500px;
       margin:  auto;
 
       &__title{
@@ -362,11 +304,75 @@ p{
       }         
   } 
   
-  img{
-    width: 450px;
-    height: 450px;
+  &__image{
+    width: 500px;
+    height: 500px;
     margin: auto 0 auto auto;
     border-radius: 15px;
+  }
+}
+
+/*main*/
+.main{
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+
+  &__box{
+      margin: 0 20px auto 20px;
+      flex: 1;
+      border-radius: 30px;
+      border: 1px #2E669A solid;
+      overflow: hidden; 
+      height: 680px;
+      text-align: center; 
+              
+          h3{
+              color: #2E669A;
+              margin: 10px auto 20px auto;
+              text-transform: uppercase;
+              font-size: 1.2em;
+              border-bottom: 1px #2E669A solid;
+              width: 80%;
+              height: 60px;
+              padding-top: 5px;
+          }
+
+          ul li{
+            font-size: 1.2em;
+          }
+
+          img{
+              width: 380px;
+              height: 280px;
+              border-radius: 30px;
+              bottom: 10px;
+              margin: 40px auto 40px auto;
+          }
+          
+          p{
+              width: 90%;
+              margin: 5px auto;
+              text-align: justify;
+          }
+
+          ul{
+              margin: 10px auto;
+              text-align: left;
+          }
+
+          li{
+              margin: 5px auto;
+              display: inline;
+              font-size: 1em;
+              font-weight: 500;
+          }
+
+          i{
+              margin: auto 5px;
+              color: #2E669A;
+              font-size: 1.1em;
+          }      
   }
 }
 
@@ -374,12 +380,10 @@ p{
 .testimonies{
   display: block;
   
-  h3{
+  h2{
     text-transform: uppercase;
     margin: 30px auto;
-    color: #2E669A;
-    font-size: 1.8em;
-    font-weight: bold;
+    border-bottom: 3px #2E669A solid;
   }
 
   &__boxes{
@@ -485,10 +489,12 @@ p{
 
 /*page mentions*/
 .mentions-container{
-  width: 80%;
-  margin:100px auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  margin:100px 150px auto 150px;
   text-align: left;
-  
+
   .mentions-title{
     font-size: 1.2em;
     margin: 10px auto;
@@ -497,21 +503,38 @@ p{
     .mentions-text{
       text-align: left;
       width: 80%;
+      margin: auto 150px auto 250px;
     }
   }
 }
 
 /*page de remerciements*/
-.thanks-section{
-  margin: 100px auto;
+.thanks-container{
   width: 80%;
-  height: auto;
+  margin: 0 150px auto 150px;
+  text-align: center;
+  height: 100vh;
+  position: absolute;
 
-  a{
+.thanks-section{
+  margin: 200px auto 30px auto;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+
+  .home-btn{
     color: #2E669A;
-    margin: 30px auto;
+    margin: 50px auto 30px auto;
+    font-size: 1.2em;
+    font-weight: 500;
   }
 
+  .home-btn:hover{
+    color: blue;
+  }
+}
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px){
@@ -528,7 +551,6 @@ p{
   margin: 0  0 200px auto;
   width: 100%;
   height: 100vh;
-
 }
 
   /*page mentions*/
@@ -605,6 +627,11 @@ p{
           &__box{
             margin: auto 10px auto 10px;
             height: 850px;
+
+            img{
+              width: 300px;
+              height: 300px;
+            }
           }
             }
 
@@ -626,10 +653,21 @@ p{
         }
   }
 
-   /*page remerciements*/
-   .thanks-container{
-    height: 70%;
-  }
+     /*page de remerciements*/
+.thanks-container{
+  margin: 0  0 200px auto;
+  width: 100%;
+  height: 100vh;
+}
+
+  /*page mentions*/
+  .mentions-container{
+    height: 100%;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -733,7 +771,7 @@ p{
 
           &__text{
             margin: auto;
-            width: 500px;
+            width: 520px;
           }
         }
 
@@ -746,7 +784,8 @@ p{
             }
 
             img{
-              width: 400px;
+              width: 550px;
+              height: 280px;
             }
         }
 
@@ -799,15 +838,17 @@ p{
 
    /*page remerciements*/
    .thanks-container{
-    height: 70%;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
   }
 
   /*page mentions*/
 .mentions-container{
-  width: 80%;
-  margin:100px auto 50px auto;
+  width: 100%;
+  margin: 0;
   text-align: left;
-  height: 70%;
+  height: 100vh;
   
   .mentions-title{
     font-size: 1.2em;
@@ -833,19 +874,13 @@ p{
 
     h1{
       width: 100%;
-      font-size: 1.1em;
+      font-size: 1.4em;
       justify-content: center;
       align-items: center;
       padding-bottom: 40px;
       margin: 0
     }    
     }
-
-    ul{
-      width: 80%;
-      margin: auto;
-    }
-
     ul li{
       width: 80%;
       margin: auto;
@@ -855,37 +890,46 @@ p{
     .header{
       flex-direction: column;
       width: 100%;
-      margin: auto 0 auto 0;
+      margin: 0 auto;
 
       &__up{
         display: flex;
         flex-direction: column-reverse;
         height: auto;
+        margin: 0;
         width: 100%;
 
         &__text{
-          margin: auto;
+          margin: 0;
           text-align: left;
+          width: 100%;
           
           img{
-            width: 280px;
+            width: 250px;
+            height: 300px;
             margin: auto;
+            display: none;
           }
 
           ul{
-            width: 80%;
-            margin: auto 5px;
+            width: 90%;
+            margin: 20px auto auto 30px;
             height: auto;
-           
+            display: table;
+
             li{
-              margin: auto 5px;
+              width: 100%;
+              display: table-cell;
+              vertical-align: middle;
 
               i{
-                margin: auto 5px;
+                margin: 0 5px;
             }
 
               p{
-                margin: auto 5px;color: black;
+                margin: 0 5px;
+                width: 100%;
+                color: black;
                 font-size: 1em;
               }
 
@@ -898,34 +942,45 @@ p{
         min-height: auto;
         overflow: hidden;
         margin: 20px auto;
-        width: 400px;
+        width: 370px;
 
         .container-form{
           height: auto;
           min-height: auto;
           overflow: hidden;
+        }
+
+        .page{
           width: 100%;
           margin: 0;
         }
 
-        input{
-          width: 200px;
+        .progress-bar{
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
         }
 
         .form-outer{
+          width: 100%;
+          margin: auto;
+        }
+
+        .form{
           width: 100%;
           margin: 0;
         }
 
         .form-title{
-          font-size: 1.2em;
+          font-size: 1.4em;
+        }
         }
 
-        input{
-          width: 150px;
+        .formulaire .form-outer form .page .field {
+          width: 100%;
         }
-        }
-      }        
+      } 
+
       &__bottom{
         h2{
           margin-top: 20px;
@@ -937,7 +992,7 @@ p{
           height: auto;
           margin: 0 auto;
 
-          img{
+          .logos{
             width: 100px;
             height: 100px;
             margin: 15px auto;
@@ -948,10 +1003,12 @@ p{
     
     .container{
       width: 100%;
+
       .slider{
         flex-direction: column;
         height: 1400px;
         margin: 10px auto;
+        width: 100%;
 
         &__section{
           width: 300px;
@@ -963,32 +1020,40 @@ p{
       .content{
         height: 860px;
         flex-direction: column-reverse;
-        margin: 50px auto;
+        margin: 20px auto;
         width: 100%;
 
-        img{
-          margin: 50px auto;
-          width: 300px;
-          height: 250px;
+        &__text{
+          margin: 30px auto;
+          width: 320px;
+          height: auto
         }
 
-        &__text{
-          margin: 15px auto;
+        &__image{
+          margin: 0 auto;
           width: 300px;
-          height: auto
+          height: 250px;
         }
       }
 
       .main{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin: auto;
+        height: auto;
 
         &__box{
           margin: 20px auto;
           width: 90%;
+          height: 1200px;
 
-          h3{
+          img{
+            width: 300px;
+            height: 250px;
+            margin: 20px auto;
+          }
+
+          h2{
             width: 80%;
             margin: auto;
           }
@@ -996,8 +1061,9 @@ p{
       }
 
       .testimonies{
+        padding-bottom: 10px;
         h3{
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
 
         &__boxes{
@@ -1030,27 +1096,43 @@ p{
         }
 
         &__disclaimer{
-          margin: auto auto 20px auto;
+          margin: 30px auto 20px auto;
         }
 
       }
     }
 
-    /*page de remerciements*/
-    .container{
-      height: 100vh;
-    }
+       /*page remerciements*/
+   .thanks-container{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
     
-    .thanks-section{
-    margin: 150px auto;
-    width: 80%;
-    height: 90vh;
-
-  a{
-    color: #2E669A;
-    margin: 30px auto;
+     .thanks-section{
+      height: 100vh;
+      width: 100%;
+    padding-top: 20px;
   }
+}
 
+  /*page mentions*/
+.mentions-container{
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  height: 100vh;
+  
+  .mentions-title{
+    font-size: 1.2em;
+    margin: 10px auto;
+    text-align: left;
+    
+    .mentions-text{
+      text-align: left;
+      width: 80%;
+      margin: 20px auto 50px auto;
     }
-    }
+  }
+}
+  }
 }
