@@ -7,14 +7,29 @@
     <link rel="stylesheet" href="assets/sass/css/style-form.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>GLOBAL RENOV - ACCUEIL</title>
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '877468482648069');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
 <!--container-->  
     <div class="top">
-        <a href="#" class="logo">
-        GLOBAL RENOV</a>
-
         <h1 class="title">
             Etes vous intéressé par un 
             projet de pompe a chaleur ?   
@@ -41,6 +56,7 @@
 
                 <!--formulaire-->
                 <div class="formulaire" id="formulaire">                  
+                    
                     <div class="container-form">
                     <h2 class="form-title">Formulaire d'éligibilité</h2>
 
