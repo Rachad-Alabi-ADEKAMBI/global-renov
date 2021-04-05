@@ -1,0 +1,14 @@
+{
+  "name": "global-renov",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/sass/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^11.2.1"
+  }
+}
