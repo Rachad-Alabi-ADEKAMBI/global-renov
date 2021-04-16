@@ -18,9 +18,11 @@ nextBtnFirst.addEventListener("click", function(event){
   //condition qui vérifie que la case choisie est PROPRIETAIRE
   event.preventDefault();
   let titre=document.getElementById("titre").value;
+
   if (titre != "proprietaire"){
-    alert("Désolé mais vous devez etre propriétaire");
+    alert("Désolé mais vous devez être propriétaire pour profiter de ce programme");
   }
+
   else{
   slidePage.style.marginLeft = "-25%";
   bullet[current - 1].classList.add("active");
@@ -34,34 +36,64 @@ nextBtnFirst.addEventListener("click", function(event){
 //deuxieme bouton SUIVANT
 nextBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
+
+  let chauffage = document.getElementById("chauffage").value;
+  if (chauffage == "electrique"){
+    alert("Désolé mais ce type de chauffage ne donne pas accès au programme")
+  }
+
+  else{
+    slidePage.style.marginLeft = "-50%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
+  }
 });
 
 //troisieme bouton suivant
 nextBtnThird.addEventListener("click", function(event){
   event.preventDefault();
+
+  let prenom = document.getElementById("prenom").value;
+  let nom = document.getElementById("nom").value;
+  let telephone = document.getElementById("telephone").value;
+  let email = document.getElementById("email").value;
+
+  if (prenom == "" || nom =="" || telephone == "" || email == "")
+  {
+    alert("Veuillez remplir toutes les cases");
+  }
+
+  else{
   slidePage.style.marginLeft = "-75%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
-});
+  }
+})
 
 //bouton SOUMETTRE
 submitBtn.addEventListener("click", function(){
   event.preventDefault();
+
+  let region = document.getElementById("region").value;
+  let code_postal = document.getElementById("code_postal").value;
+  let ville = document.getElementById("ville").value;
+
+  if (region == "" || code_postal == "" || ville == "")
+  
+  {
+    alert("Veuillez remplir toutes les cases")
+  }
+
+  else{
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
-
-  //redirection
-  location.href = 'thanks.php';
-
+  }
 });
 
 //premier bouton PRECEDENT

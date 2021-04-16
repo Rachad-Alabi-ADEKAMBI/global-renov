@@ -1,30 +1,50 @@
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/sass/css/style.css">
+    <link rel="stylesheet" href="assets/sass/css/style-form.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta name="description" content="Global Renov est une entreprise qui vous accompagne dans l'installation de la pompe à chaleur de votre maison">
+    <meta name="keywords" content="pompe à chaleur, rénovation, énergie">
+    <meta name="robots" content="index, follow">
     <title>GLOBAL RENOV - ACCUEIL</title>
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '877468482648069');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
-<!--container-->
-   
-        <a href="#" class="logo">
-        GLOBAL RENOV</a>
+<!--container-->  
+    <div class="top">
         <h1 class="title">
             Etes vous intéressé par un 
             projet de pompe a chaleur ?   
         </h1> 
-           
+    </div>   
+
         <!--header-->
         <header class="header">
-            <div class="header__up">
-                <div class="header__up__text">
+            <div class="header__up" id="header__up">
+                
+                <div class="header__up__text" >
                     <img class="header__up__text__image" src="./assets/images/img1.jpeg" alt="image de 
                         pompe à chaleur"> 
-
                     <ul>
                     <li><i class="fas fa-check-circle"></i><p>Plus de 70% d’économies sur vos factures d’électricité</p></li>
                     <li><i class="fas fa-check-circle"></i><p>Profitez des primes d’états estimées à 80 % du prix d’installation</p></li>
@@ -32,12 +52,12 @@
                     <li><i class="fas fa-check-circle"></i> <p>Aucune démarche administrative</p></li>
                     <li><i class="fas fa-check-circle"></i> <p>Adoptez une solution d’énergie propre et renouvelable</p></li>
                     <li><i class="fas fa-check-circle"></i><p> Accompagnement tout au long des procédures</p></li>
-                    </ul> <br> 
-
+                    </ul>
                 </div>     
 
                 <!--formulaire-->
                 <div class="formulaire" id="formulaire">                  
+                    
                     <div class="container-form">
                     <h2 class="form-title">Formulaire d'éligibilité</h2>
 
@@ -64,18 +84,18 @@
                     </div>
 
                     <div class="form-outer">
-                <form action="" method="">
+                    <form action="form.php" method="POST">
                         <div class="page slide-page">
-                    <h3>Vérifiez votre éligibilité</h3>
+                            <h3>Vérifiez votre éligibilité</h3>
                       
-                  <div class="field">
-                      <label for="titre">Vous êtes:  
-                          <select name="titre" id="titre" class="titre">
-                              <option value="proprietaire">Propriétaire</option>
-                              <option value="locataire">Locataire</option>
-                          </select> 
-                        </label>
-                  </div><br>
+                        <div class="field">
+                            <label for="titre">Vous êtes:  
+                                <select name="titre" id="titre" class="titre">
+                                    <option value="proprietaire">Propriétaire</option>
+                                    <option value="locataire">Locataire</option>
+                                </select> 
+                                </label>
+                        </div><br>
       
                   <div class="field btns">
                     <button class="firstNext next">Suivant</button>
@@ -86,10 +106,10 @@
                   <h3>Informations sur l'habitation</h3>
                   <div class="field">
                       <label for="habitation">Type d'habitation
-                          <select name="habitation" id="">
+                          <select name="habitation" id="habitation">
                               <option value="maison">Maison</option>
                               <option value="appartement">Appartement</option>
-                              <option value="autre-type">Autre</option>
+                              <option value="autre">Autre</option>
                           </select>
                       </label>
                   </div>
@@ -97,9 +117,9 @@
                   <div class="field">
                       <label for="chauffage">Type de chauffage
                           <select name="chauffage" id="chauffage">
-                              <option value="maison">Fioul</option>
-                              <option value="appartement">Gaz</option>
-                              <option value="autre-type">Autre</option>
+                              <option value="fioul">Fioul</option>
+                              <option value="gaz">Gaz</option>
+                              <option value="electrique">Electrique</option>
                           </select>
                       </label>
                   </div> <br>
@@ -112,20 +132,18 @@
                   <div class="page">
                   <h3>Informations personnelles</h3>
                   <div class="field">
-                      <label for="prenom"><input type="text" placeholder="Prénom"></label> 
-                       <label for="nom"><input type="text" placeholder="Nom"></label>
+                      <label for="prenom"></label><input type="text" placeholder="Prénom" id="prenom" name="prenom" required>
+                       <label for="nom"></label><input type="text" placeholder="Nom" id="nom" name="nom" required>
+                  </div>    
+      
+                  <div class="field">
+                      <label for="telephone"></label>
+                          <input type="text" placeholder="telephone" id="telephone" name="telephone">
                   </div>
       
                   <div class="field">
-                      <label for="telephone">
-                          <input type="number" placeholder="telephone">
-                      </label>
-                  </div>
-      
-                  <div class="field">
-                      <label for="email" class="email">
-                         <input type="text" class="e" placeholder="Email">
-                      </label>
+                      <label for="email" class="email"></label>
+                         <input type="text" class="email" placeholder="Email"  id="email" name="email">
                   </div>
                      
                   <div class="field btns">
@@ -136,43 +154,45 @@
               
                   <div class="page">
                     <h3>Informations complémentaires</h3>
+
                   <div class="field">
                       <label for="region" class="region"> </label>
-                          <input type="text" class="" placeholder="Région">  
+                          <input type="text" class="" placeholder="Région" id="region" name="region" required>  
                   </div>
       
                   <div class="field">
-                      <label for="code_postal" class="code_postal">
-                          <input type="code_postal" class="" placeholder="Code postal">
-                      </label>
+                      <label for="code_postal" class="code_postal"></label>
+                          <input type="number" class="" placeholder="Code postal" id="code_postal" name="code_postal" required>        
                   </div>
       
                   <div class="field">
-                      <label for="ville" class="ville">
-                          <input type="text" class="" placeholder="Ville">
-                      </label>
-                      </div>
+                      <label for="ville" class="ville"> </label>
+                          <input type="text" class="" placeholder="Ville" id="ville" name="ville" required>                 
+                </div>
       
                    <div class="field btns">
                     <button class="prev-3 prev">PRECEDENT</button>
-                    <button class="submit">SOUMETTRE</button>
+                    <button type="submit" name="submit">SOUMETTRE</button>
                   </div>
                   </div>
 
+              
+
                     </form>
                 </div>
+                
             </div>
             </div>
         </div>
 
             <div class="header__bottom">
-                <h2 class="header__bottom__title">Nos QUALIFICATIONS</h2>
+                <h2 class="header__bottom__title">NOS QUALIFICATIONS</h2>
 
                 <div class="header__bottom__list">
-                    <img src="assets/images/logo1.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo2.jpg" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo3.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
-                    <img src="assets/images/logo4.png" class="logo" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo1.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo2.jpg" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo3.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
+                    <img src="assets/images/logo4.png" class="logos" alt="logo d' entreprise de pompe à chaleur">
                 </div>
             </div>
         </header>
@@ -198,14 +218,15 @@
             <div class="slider__section">          
                 <h3>CLASSE ÉNERGÉTIQUE A+</h3>
                 <p>En installant une pompe à chaleur, votre maison
-                     gagne en classe énergétique et <p class="important">prend de la valeur.</p></p>
+                     gagne en classe énergétique et prend de la valeur.</p>
                      <img src="./assets/images/eclair6.jpg" alt="pompe à chaleur"> 
             </div>
         </div>
+        
         <!--content-->
         <div class="content">    
             <div class="content__text">        
-                <h2 class="content__text__title">Étapes</h2> 
+                <h2 class="content__text__title">ETAPES</h2> 
                 
                 <h3> Quelles sont les étapes à suivre pour remplacer sa chaudière
                     par une pompe à chaleur ? </h3>
@@ -216,21 +237,19 @@
                         <li>Prise de rdv pour l’installation</li>
                         <li>Installation de votre pompe à chaleur</li>
                     </ol>  
-                    
-                    <a href="#formulaire">
+
                         <button class="link-btn">
-                            Remplir le formulaire
+                        <a href="#formulaire" class="link-btn-txt">Remplir le formulaire </a>
                         </button>
-                    </a>
             </div>
 
-            <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur">
+            <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur" class="content__image">
         </div>
 
         <!--main-->
         <main class="main">
             <div class="main__box">
-                    <h3> Pourquoi installer ue pompe à chaleur ?</h3>
+                    <h3> Pourquoi installer une pompe à chaleur ?</h3>
                     <p>
                         Le principe d’une pompe à chaleur est de récupérer les calories présentes
                     dans l’air extérieur ou encore dans le sol pour la transformer en air chaud 
@@ -280,10 +299,10 @@
         
         <!--testimonies-->
         <div class="testimonies">
-            <h3 class="content__testimonies__title">
+            <h2 class="content__testimonies__title">
                 94% de nos clients
                 sont satisfaits
-            </h3>
+            </h2>
             
             <div class="testimonies__boxes">
                 <section>                
@@ -294,10 +313,10 @@
                     
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
                        
                     </ul>
                     <p class="comment">Muriel Ribeiro</p>
@@ -309,12 +328,13 @@
                     <p>Je recommande. Société sérieuse et à l’écoute. Intervention très propre, 
                         merci encore ma pompe à chaleur fonctionne à merveille.
                     </p>
+
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
                         
                     </ul>
                     <p class="comment">Michel Dumas </p> 
@@ -328,10 +348,10 @@
                     </p>
                     <ul class="stars">
                         <li<i class="fas fa-star" style="color:#2E669A"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>
-                        <li<i class="fas fa-star"></i></li>                         
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>
+                        <li<i class="fas fa-star" style="color:#2E669A"></i></li>                         
                     </ul>
 
                     <p class="comment">Dominique Freiss</p>
@@ -343,14 +363,28 @@
         <!--footer-->
         <footer class="footer">
             <a href="#" class="footer__text">
-                Global Renov ©️2020  Tous droits réservés
+                Global Renov ©️ 2020  <br> Tous droits réservés
             </a>
+
+            <div class="footer__bouton">
+                    <p> Déjà des milliers de Français satisfaits grâce au travail de
+                    nos experts RGE. Remplissez ce formulaire ça ne vous
+                    prendra que quelques secondes.</p> <br>
+
+                <a href="#formulaire" class="footer-btn-link">
+                    <button class="footer-btn">
+                        Remplir le formulaire
+                    </button>
+                </a> 
+            </div>
+
 
             <div class="footer__disclaimer">
                  <a href="mentions.php">Mentions légales</a>
             </div>
         </footer>
-    
+                                
+                                
     </div>
     <script src="assets/js/script.js"></script>
 </body>
