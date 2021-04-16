@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,6 +5,9 @@
     <link rel="stylesheet" href="assets/sass/css/style.css">
     <link rel="stylesheet" href="assets/sass/css/style-form.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta name="description" content="Global Renov est une entreprise qui vous accompagne dans l'installation de la pompe à chaleur de votre maison">
+    <meta name="keywords" content="pompe à chaleur, rénovation, énergie">
+    <meta name="robots" content="index, follow">
     <title>GLOBAL RENOV - ACCUEIL</title>
 
     <!-- Facebook Pixel Code -->
@@ -39,10 +41,10 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
         <!--header-->
         <header class="header">
             <div class="header__up" id="header__up">
+                
                 <div class="header__up__text" >
                     <img class="header__up__text__image" src="./assets/images/img1.jpeg" alt="image de 
                         pompe à chaleur"> 
-
                     <ul>
                     <li><i class="fas fa-check-circle"></i><p>Plus de 70% d’économies sur vos factures d’électricité</p></li>
                     <li><i class="fas fa-check-circle"></i><p>Profitez des primes d’états estimées à 80 % du prix d’installation</p></li>
@@ -51,7 +53,6 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
                     <li><i class="fas fa-check-circle"></i> <p>Adoptez une solution d’énergie propre et renouvelable</p></li>
                     <li><i class="fas fa-check-circle"></i><p> Accompagnement tout au long des procédures</p></li>
                     </ul>
-
                 </div>     
 
                 <!--formulaire-->
@@ -137,7 +138,7 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
       
                   <div class="field">
                       <label for="telephone"></label>
-                          <input type="number" placeholder="telephone" id="telephone" name="telephone">
+                          <input type="text" placeholder="telephone" id="telephone" name="telephone">
                   </div>
       
                   <div class="field">
@@ -161,7 +162,7 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
       
                   <div class="field">
                       <label for="code_postal" class="code_postal"></label>
-                          <input type="code_postal" class="" placeholder="Code postal" id="code_postal" name="code_postal" required>        
+                          <input type="number" class="" placeholder="Code postal" id="code_postal" name="code_postal" required>        
                   </div>
       
                   <div class="field">
@@ -171,9 +172,11 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
       
                    <div class="field btns">
                     <button class="prev-3 prev">PRECEDENT</button>
-                    <button class="submit">SOUMETTRE</button>
+                    <button type="submit" name="submit">SOUMETTRE</button>
                   </div>
                   </div>
+
+              
 
                     </form>
                 </div>
@@ -215,7 +218,7 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
             <div class="slider__section">          
                 <h3>CLASSE ÉNERGÉTIQUE A+</h3>
                 <p>En installant une pompe à chaleur, votre maison
-                     gagne en classe énergétique et <p class="important">prend de la valeur.</p></p>
+                     gagne en classe énergétique et prend de la valeur.</p>
                      <img src="./assets/images/eclair6.jpg" alt="pompe à chaleur"> 
             </div>
         </div>
@@ -234,12 +237,10 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
                         <li>Prise de rdv pour l’installation</li>
                         <li>Installation de votre pompe à chaleur</li>
                     </ol>  
-                    
-                    <a href="#formulaire">
+
                         <button class="link-btn">
-                            Remplir le formulaire
+                        <a href="#formulaire" class="link-btn-txt">Remplir le formulaire </a>
                         </button>
-                    </a>
             </div>
 
             <img src="./assets/images/img2.jpeg" alt="image de pompe à chaleur" class="content__image">
@@ -370,13 +371,11 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
                     nos experts RGE. Remplissez ce formulaire ça ne vous
                     prendra que quelques secondes.</p> <br>
 
-
                 <a href="#formulaire" class="footer-btn-link">
                     <button class="footer-btn">
-                        En savoir plus
+                        Remplir le formulaire
                     </button>
-                </a>
-     
+                </a> 
             </div>
 
 
@@ -384,7 +383,8 @@ src="https://www.facebook.com/tr?id=877468482648069&ev=PageView&noscript=1"
                  <a href="mentions.php">Mentions légales</a>
             </div>
         </footer>
-    
+                                
+                                
     </div>
     <script src="assets/js/script.js"></script>
 </body>

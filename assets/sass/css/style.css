@@ -276,6 +276,10 @@ p {
   font-family: "Helvetica Neue";
   text-transform: uppercase;
 }
+.content__text .link-btn .link-btn-txt {
+  color: white;
+  text-decoration: none;
+}
 .content__text .link-btn:hover {
   background-color: #2E669A;
   font-weight: bold;
@@ -364,10 +368,12 @@ p {
 .testimonies__boxes section p {
   margin: 0 auto;
 }
+.testimonies__boxes section ul li {
+  display: inline;
+}
 
 /*footer*/
 .footer {
-  margin: 0 auto 0 auto;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -376,6 +382,7 @@ p {
   background-color: #72b0eb;
   font-size: 1.2em;
   color: white;
+  bottom: 0;
 }
 .footer__text {
   float: left;
@@ -484,6 +491,11 @@ p {
   color: blue;
 }
 
+.back-office-text {
+  margin: 100px auto auto 30px;
+  font-size: 1.5em;
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
   .main__box {
     height: 720px;
@@ -503,7 +515,7 @@ p {
   .mentions-container {
     height: 100%;
     margin: 0 auto 0 auto;
-    width: 80%;
+    width: 100%;
     padding-top: 50px;
     padding-left: 50px;
   }
@@ -622,20 +634,6 @@ p {
   }
   body .header__up__text ul {
     margin: 10px auto 0 auto;
-  }
-  body .header__up .formulaire {
-    height: auto;
-    min-height: auto;
-    overflow: hidden;
-    margin: 50px auto;
-  }
-  body .header__up .formulaire .container-form {
-    height: auto;
-    min-height: auto;
-    overflow: hidden;
-  }
-  body .header__up .formulaire select {
-    height: 100px;
   }
   body .header__bottom h2 {
     margin-top: 20px;
@@ -809,41 +807,6 @@ p {
     width: 100%;
     color: black;
     font-size: 1em;
-  }
-  body .header__up .formulaire {
-    height: auto;
-    min-height: auto;
-    overflow: hidden;
-    margin: 20px auto;
-    width: 370px;
-  }
-  body .header__up .formulaire .container-form {
-    height: auto;
-    min-height: auto;
-    overflow: hidden;
-  }
-  body .header__up .formulaire .page {
-    width: 100%;
-    margin: 0;
-  }
-  body .header__up .formulaire .progress-bar {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  body .header__up .formulaire .form-outer {
-    width: 100%;
-    margin: auto;
-  }
-  body .header__up .formulaire .form {
-    width: 100%;
-    margin: 0;
-  }
-  body .header__up .formulaire .form-title {
-    font-size: 1.4em;
-  }
-  body .header__up .formulaire .form-outer form .page .field {
-    width: 100%;
   }
   body .header__bottom h2 {
     margin-top: 20px;
