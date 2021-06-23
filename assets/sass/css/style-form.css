@@ -1,0 +1,205 @@
+/*formuaire*/
+.formulaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 20px #00000020;
+    background-color: #D6E6EF;  
+    border-radius: 15px;
+    margin: 10px auto;
+  }
+
+  .form-title{
+    font-size: 1.4em;
+    top: 5px;
+    width: 100%;
+    color: #5190cc;
+    text-transform: uppercase;
+  }
+  
+  label{
+    margin-top: auto;
+  }
+  
+  input{
+    border: none;
+  }
+  
+  .formulaire ::selection {
+    color: #fff;
+  }
+  .formulaire .container-form {
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 50px 35px 10px 35px;
+    height: 90vh;
+    float: right;
+  }
+  .formulaire .container-form .form-outer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .formulaire .container-form .form-outer form {
+    display: flex;
+    width: 400%;
+  }
+  .formulaire .form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  .formulaire .form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .formulaire .form-outer form .page .field {
+    width: 300px;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .formulaire form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin: auto 0;
+  }
+  .formulaire form .page .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .formulaire form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    height: 50px;
+    margin: auto auto 30px auto;
+  }
+  .formulaire form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: #2181BE;
+    margin-top: -20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    font-family: "Helvetica Neue";
+  }
+  .formulaire form .page .field button:hover {
+    background-color: #2E669A;
+    font-weight: bold;
+  }
+  .formulaire form .page .btns button {
+    margin-top: -20px !important;
+  }
+  .formulaire form .page .btns button.prev {
+    margin-right: 3px;
+    font-size: 17px;
+  }
+  .formulaire form .page .btns button.next {
+    margin-left: 3px;
+  }
+  .formulaire .container-form .progress-bar {
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+  }
+  .formulaire .container-form .progress-bar .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  .formulaire .container-form .progress-bar .step p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  .formulaire .progress-bar .step .bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .formulaire .progress-bar .step .bullet.active {
+    border-color: #72b0eb;
+    background: #72b0eb;
+  }
+  .formulaire .progress-bar .step .bullet span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .formulaire .progress-bar .step .bullet.active span {
+    display: none;
+  }
+  .formulaire .progress-bar .step .bullet:before,
+  .formulaire .progress-bar .step .bullet:after {
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -40px;
+    height: 3px;
+    width: 34px;
+    background: #262626;
+  }
+  .formulaire .progress-bar .step .bullet.active:after {
+    background: #72b0eb;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .formulaire .progress-bar .step:last-child .bullet:before,
+  .formulaire .progress-bar .step:last-child .bullet:after {
+    display: none;
+  }
+  .formulaire .progress-bar .step p.active {
+    color: #d43f8d;
+    transition: 0.2s linear;
+  }
+  .formulaire .progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .formulaire .progress-bar .step .check.active {
+    display: block;
+    color: #fff;
+  }
