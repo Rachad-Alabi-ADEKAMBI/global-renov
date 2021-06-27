@@ -555,21 +555,17 @@ p {
   }
   body .header__up {
     display: flex;
-    height: auto;
     width: 100%;
   }
-  body .header__up__text {
-    margin: auto;
-    text-align: center;
-  }
   body .header__up__text ul {
-    margin: 10px auto 0 auto;
+    margin: auto 0;
   }
   body .header__up .formulaire {
     height: auto;
     min-height: auto;
     overflow: hidden;
-    margin: 50px auto;
+    margin: 50px 20px auto 0;
+    width: 500px;
   }
   body .header__up .formulaire .container-form {
     height: auto;
@@ -595,13 +591,19 @@ p {
     height: 550px;
     margin: auto auto 20px auto;
   }
-  body .container main__box {
-    margin: auto 10px auto 10px;
-    height: 850px;
+  body .container .main {
+    height: auto;
   }
-  body .container main__box img {
-    width: 300px;
+  body .container .main__box {
+    height: 900px;
+    position: relative;
+  }
+  body .container .main__box img {
+    width: 270px;
+    position: absolute;
     height: 300px;
+    bottom: 5px;
+    left: 15px;
   }
   body .container .testimonies__boxes section {
     width: 310px;
@@ -799,7 +801,8 @@ p {
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 767px) {
+/*responsive for 768px*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     width: 100%;
     /*page remerciements*/
@@ -828,21 +831,16 @@ p {
   }
   body .header__up {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: auto;
     margin: 0;
     width: 100%;
   }
   body .header__up__text {
-    margin: 0;
-    text-align: left;
     width: 100%;
   }
   body .header__up__text img {
-    width: 250px;
-    height: 300px;
     margin: auto;
-    display: none;
   }
   body .header__up__text ul {
     width: 90%;
@@ -869,14 +867,13 @@ p {
     font-size: 2em;
   }
   body .header__bottom__list {
-    flex-direction: column;
-    height: auto;
+    flex-direction: row;
     margin: 0 auto;
   }
   body .header__bottom__list .logos {
     width: 100px;
     height: 100px;
-    margin: 15px auto;
+    margin: auto;
   }
   body .container {
     width: 100%;
@@ -893,8 +890,8 @@ p {
     margin: 15px auto;
   }
   body .container .content {
-    height: 860px;
-    flex-direction: column-reverse;
+    height: auto;
+    flex-direction: row;
     margin: 20px auto;
     width: 100%;
   }
@@ -903,10 +900,13 @@ p {
     width: 320px;
     height: auto;
   }
+  body .container .content__text .link-btn {
+    margin: 30px auto;
+  }
   body .container .content__image {
-    margin: 0 auto;
-    width: 300px;
-    height: 250px;
+    margin: auto;
+    width: 400px;
+    height: 520px;
   }
   body .container .main {
     flex-direction: column;
@@ -918,6 +918,9 @@ p {
     margin: 20px auto;
     width: 90%;
     height: 1200px;
+  }
+  body .container .main__box ul li {
+    width: 100%;
   }
   body .container .main__box img {
     width: 300px;
@@ -987,3 +990,5 @@ p {
     margin: 20px auto 50px auto;
   }
 }
+
+/*responsive for 350px*/
