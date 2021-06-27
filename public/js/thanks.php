@@ -9,10 +9,9 @@
 
 <body>
 <div class="top">
-        <a href="index.php" class="logo">
-        GLOBAL RENOV</a>
-
-      
+        <a href="index.html" class="logo">
+        GLOBAL RENOV
+        </a>     
     </div>   
 
     <div class="container">
