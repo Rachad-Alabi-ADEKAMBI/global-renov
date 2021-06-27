@@ -5,7 +5,7 @@ if (isset($_POST["submit"])) {
 
         $serveur = "globamyglobal.mysql.db";
         $login = "globamyglobal";
-        $pas = "SPBPNNWts3PuGeF1";
+        $pas = "";
 
       
         $Nom = $_POST["nom"];

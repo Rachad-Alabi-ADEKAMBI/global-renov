@@ -76,7 +76,6 @@ nextBtnThird.addEventListener("click", function(event){
 
 //bouton SOUMETTRE
 submitBtn.addEventListener("click", function(){
-  event.preventDefault();
 
   let region = document.getElementById("region").value;
   let code_postal = document.getElementById("code_postal").value;
@@ -85,14 +84,19 @@ submitBtn.addEventListener("click", function(){
   if (region == "" || code_postal == "" || ville == "")
   
   {
-    alert("Veuillez remplir toutes les cases")
+    alert("Veuillez rempl")
   }
 
   else{
+ /*
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
+  */
+ alert("merci")
+
+ 
   }
 });
 

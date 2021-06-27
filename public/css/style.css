@@ -1,4 +1,6 @@
+/*google font import*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/*general rules*/
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +20,10 @@ body {
 h1 {
   margin: 10px auto 0 auto;
   border-radius: 5px;
-  height: 55px;
   text-transform: uppercase;
   border-bottom: 2px #2E669A solid;
   text-align: center;
   vertical-align: middle;
-  padding-top: 30px;
   font-size: 1.6em;
   width: 90%;
   font-weight: 800;
@@ -72,7 +72,7 @@ p {
 .top {
   background-color: #d0e4eb;
   height: auto;
-  margin: 0;
+  margin: 15px auto;
   /*en tete de toutes les pages*/
 }
 
@@ -494,24 +494,25 @@ p {
 }
 
 /* mentions page*/
-.mentions-text h1 {
-  color: red;
+.mentions-text {
+  width: 80%;
+  margin: auto;
 }
 
 .mentions-text p {
   text-align: left;
-  width: 80%;
+  width: 100%;
 }
 
-/*thanks-page*/
-.mentions-text h1 {
-  color: black;
-}
-
-.mentions-text p {
+/*thanks page*/
+.thanks-section {
+  margin: 20px auto 20px auto;
   width: 80%;
-  text-align: left;
   font-weight: 500;
+}
+
+.thanks-section .home-link {
+  margin: 20px auto;
 }
 
 /*back-office*/
@@ -546,7 +547,7 @@ p {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   body {
     /*page de remerciements*/
-    /*mentions page*/
+    /* mentions page*/
   }
   body .header {
     flex-direction: column;
@@ -619,185 +620,9 @@ p {
     width: 100%;
     height: 100vh;
   }
-  body .mentions-container {
-    height: 100%;
-    margin: 0 auto 0 auto;
-    width: 80%;
-    padding-top: 50px;
-    padding-left: 50px;
-  }
-  /*
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  body{
-      width: 100%;
-      margin: auto; 
-
-       .top{
-         height: auto;
-
-        h1{
-          height: 80px;
-        } 
-       }
-
-       .header{
-        flex-direction: column;
-        width: 100%;
-        margin: auto 0 auto 0;
-
-        &__up{
-          display: flex;
-          flex-direction: column-reverse;
-          height: auto;
-
-          &__text{
-            margin: auto;
-            text-align: center;
-
-            &__image{
-              width: 500px;
-            }
-
-            ul{
-              margin: 10px auto 0 auto;
-            }
-          }
-        }    
-        
-        &__bottom h2{
-          margin-top: 20px;
-
-          &__list{
-            .logo{
-              margin-top: 5px;
-            }
-          }
-        } 
-      } 
-          
-        .container{  
-        .slider{
-          flex-direction: column;
-          height: 1250px;
-          text-align: center;
-          margin: 10px auto 20px auto;
-
-          &__section{
-            width: 300px;
-            margin: 10px auto;
-            height: 380px;
-
-            p{
-              text-align: left;
-              margin: auto;
-            }
-
-            i{
-              margin: auto auto 5px auto;
-            }
-          }
-
-        }
-
-        .content{
-          flex-direction: column-reverse;
-          height: 900px;
-
-          img{
-            margin: 50px auto;
-            width: 500px;
-            height: 350px;
-          }
-
-          &__text{
-            margin: auto;
-            width: 520px;
-          }
-        }
-
-        .main{
-          flex-direction: column;
-
-          &__box{
-            width: 80%;
-            margin: 20px auto;
-            }
-
-            img{
-              width: 550px;
-              height: 280px;
-            }
-        }
-
-        .testimonies{
-          flex-direction: column;
-
-          &__boxes{
-            flex-direction: column;
-            margin: 20px auto;
-            
-            section{
-              margin: 15px auto auto 50px;
-
-              p{
-                width: 600px;
-              margin: auto 30px;
-              }
-            }
-          }
-        }
-
-        .footer{
-          flex-direction: column;
-          height: 400px;
-
-          &__text {
-            margin: auto  auto 30px auto;
-          }
-
-          &__bouton{
-            width: 80%;
-            margin: auto auto 0 auto;
-
-            .footer-btn-link{
-              margin: auto;
-             
-
-            .footer-btn{
-              margin: auto;
-            }
-            }
-          }
-
-          &__disclaimer{
-            margin: 30px auto;
-             }
-        }
-        }
-    }
-
-   /*page remerciements*/
-  .thanks-container {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-  }
-  /*page mentions*/
-  .mentions-container {
-    width: 100%;
-    margin: 0;
+  body .mentions-text p {
     text-align: left;
-    height: 100vh;
-  }
-  .mentions-container .mentions-title {
-    font-size: 1.2em;
-    margin: 10px auto;
-    text-align: left;
-  }
-  .mentions-container .mentions-title .mentions-text {
-    text-align: left;
-    width: 80%;
-    margin: 20px auto 50px auto;
+    width: 95%;
   }
 }
 
@@ -946,7 +771,7 @@ p {
   }
   body .container .footer {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     height: auto;
   }
   body .container .footer__text {
@@ -992,3 +817,93 @@ p {
 }
 
 /*responsive for 350px*/
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  h1 {
+    height: auto;
+    font-size: 1.4em;
+    padding-top: 10px;
+  }
+  .header {
+    padding-top: 5px;
+  }
+  .header__up {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header__up .header__up__text img {
+    width: 330px;
+  }
+  .header__bottom__list {
+    flex-wrap: wrap;
+  }
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  .slider__section {
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .content {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+  .content__image {
+    width: 330px;
+    margin: auto;
+    height: 330px;
+  }
+  .content__text {
+    width: 330px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main__box {
+    height: auto;
+    margin: 20px auto;
+    width: 340px;
+  }
+  .main__box img {
+    width: 330px;
+    margin: auto;
+  }
+  .testimonies {
+    width: 90%;
+    margin: auto;
+  }
+  .testimonies h2 {
+    font-size: 1.4em;
+  }
+  .testimonies__boxes {
+    flex-direction: column;
+  }
+  /*footer*/
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .footer__text {
+    margin: 10px auto;
+  }
+  .footer__bouton {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .footer__bouton p {
+    margin: auto;
+    width: 100%;
+    text-align: left;
+  }
+  .footer__bouton .footer-btn-link {
+    margin: auto;
+  }
+  .footer__disclaimer {
+    margin: 30px auto 20px auto;
+  }
+}
