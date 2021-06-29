@@ -84,7 +84,7 @@ submitBtn.addEventListener("click", function(){
   if (region == "" || code_postal == "" || ville == "")
   
   {
-    alert("Veuillez rempl")
+    alert("Veuillez remplir toutes les cases")
   }
 
   else{
@@ -94,8 +94,8 @@ submitBtn.addEventListener("click", function(){
   progressText[current - 1].classList.add("active");
   current += 1;
   */
- alert("merci")
-
+ alert("Merci, nous vous contacterons très vite")
+ event.preventDefault();
  
   }
 });
