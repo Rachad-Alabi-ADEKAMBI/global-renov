@@ -1,6 +1,4 @@
-/*google font import*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-/*general rules*/
 * {
   margin: 0;
   padding: 0;
@@ -15,19 +13,6 @@ body {
   text-align: center;
   justify-content: center;
   background-color: #E8F1F6;
-}
-
-h1 {
-  margin: 10px auto 0 auto;
-  border-radius: 5px;
-  text-transform: uppercase;
-  border-bottom: 2px #2E669A solid;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.6em;
-  width: 90%;
-  font-weight: 800;
-  color: #2E669A;
 }
 
 h2 {
@@ -72,8 +57,22 @@ p {
 .top {
   background-color: #d0e4eb;
   height: auto;
-  margin: 15px auto;
-  /*en tete de toutes les pages*/
+  margin: 0;
+}
+
+.top h1 {
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+  height: 55px;
+  text-transform: uppercase;
+  border-bottom: 2px #2E669A solid;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
+  font-size: 1.6em;
+  width: 90%;
+  font-weight: 800;
+  color: #2E669A;
 }
 
 .top .logo {
@@ -181,17 +180,17 @@ p {
 /*slider*/
 .slider {
   margin: 0 auto;
-  height: 440px;
-  background: #D6E6EF;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .slider__section {
@@ -202,7 +201,7 @@ p {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  margin: auto 20px auto 20px;
+  margin: 10px auto;
   text-align: justify;
   padding-top: 5px;
   text-align: center;
@@ -493,35 +492,50 @@ p {
   color: white;
 }
 
-/* mentions page*/
-.mentions-text {
-  width: 80%;
-  margin: auto;
+/*page mentions*/
+.mentions-text h1 {
+  color: red;
 }
 
 .mentions-text p {
   text-align: left;
-  width: 100%;
+  width: 80%;
 }
 
-/*thanks page*/
-.thanks-section {
-  margin: 20px auto 20px auto;
+/*thanks-page*/
+.thanks-container {
   width: 80%;
+  margin: 0 150px auto 150px;
+  text-align: center;
+  height: 100vh;
+  position: absolute;
+}
+
+.thanks-container .thanks-section {
+  margin: 200px auto 30px auto;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
-.thanks-section .home-link {
-  margin: 20px auto;
+.thanks-container .thanks-section .home-btn {
+  color: #2E669A;
+  margin: 50px auto 30px auto;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
-/*back-office*/
+.thanks-container .thanks-section .home-btn:hover {
+  color: blue;
+}
+
 .back-office-text {
   margin: 100px auto auto 30px;
   font-size: 1.5em;
 }
 
-/*responsive for 1280px*/
 @media screen and (min-width: 1280px) {
   .main__box {
     height: 720px;
@@ -543,11 +557,125 @@ p {
   }
 }
 
-/*responsive for 1024px*/
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+/*
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+  body{
+      width: 100%;  
+      
+        .header{
+          flex-direction: column;
+          width: 100%;
+          margin: auto 0 auto 0;
+
+          &__up{
+            display: flex;
+            flex-direction: column-reverse;
+            height: auto;
+
+            &__text{
+              margin: auto;
+              text-align: center;
+
+              ul{
+                margin: 10px auto 0 auto;
+              }
+            }
+          
+            .formulaire{
+            height: auto;
+            min-height: auto;
+            overflow: hidden;
+            margin: 50px auto;
+
+            .container-form{
+              height: auto;
+              min-height: auto;
+              overflow: hidden;
+            }
+
+            select{
+              height: 100px;
+            }
+            }
+          }    
+          
+          &__bottom h2{
+            margin-top: 20px;
+          } 
+        } 
+
+        .container{
+          width: 100%;
+          margin: auto;
+
+          .slider{
+            width: 100%;
+          }
+
+            .content{
+          width: 90%;
+          height: 550px;
+          margin: auto auto 20px auto;
+            }
+
+            .main{
+          &__box{
+            margin: auto 10px auto 10px;
+            height: 850px;
+
+            img{
+              width: 300px;
+              height: 300px;
+            }
+          }
+            }
+
+            .testimonies{
+          &__boxes{
+            section{
+              width: 310px;
+            }
+          }
+            }
+
+            .foooter{
+              height: auto;
+
+              .footer__bouton{
+                width: 50%;
+              }
+            }
+        }
+  }
+  */
+/*page de remerciements*/
+/*
+.thanks-container{
+  margin: 0  0 200px auto;
+  width: 100%;
+  height: 100vh;
+}
+*/
+/*page mentions*/
+/*
+  .mentions-container{
+    height: 100%;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    /*page de remerciements*/
-    /* mentions page*/
+    width: 100%;
+    margin: auto;
+  }
+  body .top {
+    height: auto;
+  }
+  body .top h1 {
+    height: 80px;
   }
   body .header {
     flex-direction: column;
@@ -556,78 +684,127 @@ p {
   }
   body .header__up {
     display: flex;
-    width: 100%;
-  }
-  body .header__up__text ul {
-    margin: auto 0;
-  }
-  body .header__up .formulaire {
+    flex-direction: column-reverse;
     height: auto;
-    min-height: auto;
-    overflow: hidden;
-    margin: 50px 20px auto 0;
+  }
+  body .header__up__text {
+    margin: auto;
+    text-align: center;
+  }
+  body .header__up__text__image {
     width: 500px;
   }
-  body .header__up .formulaire .container-form {
-    height: auto;
-    min-height: auto;
-    overflow: hidden;
-    margin: auto;
-  }
-  body .header__up .formulaire select {
-    height: 100px;
+  body .header__up__text ul {
+    margin: 10px auto 0 auto;
   }
   body .header__bottom h2 {
     margin-top: 20px;
   }
-  body .container {
-    width: 100%;
-    margin: auto;
+  body .header__bottom h2__list .logo {
+    margin-top: 5px;
   }
   body .container .slider {
-    width: 100%;
+    flex-direction: column;
+    height: 1250px;
+    text-align: center;
+    margin: 10px auto 20px auto;
+  }
+  body .container .slider__section {
+    width: 300px;
+    margin: 10px auto;
+    height: 380px;
+  }
+  body .container .slider__section p {
+    text-align: left;
+    margin: auto;
+  }
+  body .container .slider__section i {
+    margin: auto auto 5px auto;
   }
   body .container .content {
-    width: 90%;
-    height: 550px;
-    margin: auto auto 20px auto;
+    flex-direction: column-reverse;
+    height: 900px;
+  }
+  body .container .content img {
+    margin: 50px auto;
+    width: 500px;
+    height: 350px;
+  }
+  body .container .content__text {
+    margin: auto;
+    width: 520px;
   }
   body .container .main {
-    height: auto;
+    flex-direction: column;
   }
   body .container .main__box {
-    height: 900px;
-    position: relative;
+    width: 80%;
+    margin: 20px auto;
   }
-  body .container .main__box img {
-    width: 270px;
-    position: absolute;
-    height: 300px;
-    bottom: 5px;
-    left: 15px;
+  body .container .main img {
+    width: 550px;
+    height: 280px;
+  }
+  body .container .testimonies {
+    flex-direction: column;
+  }
+  body .container .testimonies__boxes {
+    flex-direction: column;
+    margin: 20px auto;
   }
   body .container .testimonies__boxes section {
-    width: 310px;
+    margin: 15px auto auto 50px;
   }
-  body .container .foooter {
-    height: auto;
+  body .container .testimonies__boxes section p {
+    width: 600px;
+    margin: auto 30px;
   }
-  body .container .foooter .footer__bouton {
-    width: 50%;
+  body .container .footer {
+    flex-direction: column;
+    height: 400px;
   }
-  body .thanks-container {
-    margin: 0  0 200px auto;
+  body .container .footer__text {
+    margin: auto  auto 30px auto;
+  }
+  body .container .footer__bouton {
+    width: 80%;
+    margin: auto auto 0 auto;
+  }
+  body .container .footer__bouton .footer-btn-link {
+    margin: auto;
+  }
+  body .container .footer__bouton .footer-btn-link .footer-btn {
+    margin: auto;
+  }
+  body .container .footer__disclaimer {
+    margin: 30px auto;
+  }
+  /*page remerciements*/
+  .thanks-container {
+    height: 100vh;
     width: 100%;
+    margin: 0;
+  }
+  /*page mentions*/
+  .mentions-container {
+    width: 100%;
+    margin: 0;
+    text-align: left;
     height: 100vh;
   }
-  body .mentions-text p {
+  .mentions-container .mentions-title {
+    font-size: 1.2em;
+    margin: 10px auto;
     text-align: left;
-    width: 95%;
+  }
+  .mentions-container .mentions-title .mentions-text {
+    text-align: left;
+    width: 80%;
+    margin: 20px auto 50px auto;
   }
 }
 
-/*responsive for 768px*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   body {
     width: 100%;
     /*page remerciements*/
@@ -656,16 +833,21 @@ p {
   }
   body .header__up {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     margin: 0;
     width: 100%;
   }
   body .header__up__text {
+    margin: 0;
+    text-align: left;
     width: 100%;
   }
   body .header__up__text img {
+    width: 250px;
+    height: 300px;
     margin: auto;
+    display: none;
   }
   body .header__up__text ul {
     width: 90%;
@@ -692,13 +874,14 @@ p {
     font-size: 2em;
   }
   body .header__bottom__list {
-    flex-direction: row;
+    flex-direction: column;
+    height: auto;
     margin: 0 auto;
   }
   body .header__bottom__list .logos {
     width: 100px;
     height: 100px;
-    margin: auto;
+    margin: 15px auto;
   }
   body .container {
     width: 100%;
@@ -715,8 +898,8 @@ p {
     margin: 15px auto;
   }
   body .container .content {
-    height: auto;
-    flex-direction: row;
+    height: 860px;
+    flex-direction: column-reverse;
     margin: 20px auto;
     width: 100%;
   }
@@ -725,13 +908,10 @@ p {
     width: 320px;
     height: auto;
   }
-  body .container .content__text .link-btn {
-    margin: 30px auto;
-  }
   body .container .content__image {
-    margin: auto;
-    width: 400px;
-    height: 520px;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
   }
   body .container .main {
     flex-direction: column;
@@ -743,9 +923,6 @@ p {
     margin: 20px auto;
     width: 90%;
     height: 1200px;
-  }
-  body .container .main__box ul li {
-    width: 100%;
   }
   body .container .main__box img {
     width: 300px;
@@ -771,7 +948,7 @@ p {
   }
   body .container .footer {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     height: auto;
   }
   body .container .footer__text {
@@ -813,97 +990,5 @@ p {
     text-align: left;
     width: 80%;
     margin: 20px auto 50px auto;
-  }
-}
-
-/*responsive for 350px*/
-@media screen and (min-width: 350px) and (max-width: 767px) {
-  h1 {
-    height: auto;
-    font-size: 1.4em;
-    padding-top: 10px;
-  }
-  .header {
-    padding-top: 5px;
-  }
-  .header__up {
-    width: 100%;
-    flex-direction: column;
-  }
-  .header__up .header__up__text img {
-    width: 330px;
-  }
-  .header__bottom__list {
-    flex-wrap: wrap;
-  }
-  .slider {
-    width: 100%;
-    height: auto;
-  }
-  .slider__section {
-    width: 300px;
-    height: auto;
-    margin: 10px auto;
-  }
-  .content {
-    flex-direction: column-reverse;
-    height: auto;
-    width: 100%;
-  }
-  .content__image {
-    width: 330px;
-    margin: auto;
-    height: 330px;
-  }
-  .content__text {
-    width: 330px;
-    margin-top: 20px;
-    height: auto;
-  }
-  .main {
-    flex-direction: column;
-  }
-  .main__box {
-    height: auto;
-    margin: 20px auto;
-    width: 340px;
-  }
-  .main__box img {
-    width: 330px;
-    margin: auto;
-  }
-  .testimonies {
-    width: 90%;
-    margin: auto;
-  }
-  .testimonies h2 {
-    font-size: 1.4em;
-  }
-  .testimonies__boxes {
-    flex-direction: column;
-  }
-  /*footer*/
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-  }
-  .footer__text {
-    margin: 10px auto;
-  }
-  .footer__bouton {
-    width: 90%;
-    margin: 20px auto;
-  }
-  .footer__bouton p {
-    margin: auto;
-    width: 100%;
-    text-align: left;
-  }
-  .footer__bouton .footer-btn-link {
-    margin: auto;
-  }
-  .footer__disclaimer {
-    margin: 30px auto 20px auto;
   }
 }
